@@ -70,6 +70,6 @@ theme: landscape
 deploy:
   type: git
   repository: https://github.com/qop/qop.github.io.git
-  branch: master
+  branch: gh-pages
 
 disqus_shortname: qopgithubio
