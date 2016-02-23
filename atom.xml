@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qop.github.io/"/>
-  <updated>2016-02-23T06:47:46.000Z</updated>
+  <updated>2016-02-23T06:51:32.000Z</updated>
   <id>http://qop.github.io/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python爬虫(一)</title>
+    <link href="http://qop.github.io/2015/02/23/2016/0223/"/>
+    <id>http://qop.github.io/2015/02/23/2016/0223/</id>
+    <published>2015-02-22T16:00:00.000Z</published>
+    <updated>2016-02-23T06:51:32.000Z</updated>
+    
+    <content type="html">&lt;p&gt;之前用python写过一些小工具，非常方便，但是没有系统学习过，所以想带着做一个简单爬虫的目的，系统地学习一下这个语言。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;之前用python写过一些小工具，非常方便，但是没有系统学习过，所以想带着做一个简单爬虫的目的，系统地学习一下这个语言。&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://qop.github.io/tags/python/"/>
+    
+      <category term="爬虫" scheme="http://qop.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>2014年终总结</title>
