@@ -5,9 +5,9 @@
 # Site
 title: qop's blog
 subtitle:
-description:
+description: 脱下长日的假面，奔向梦幻的疆界。
 author: 周中坚
-language: zh-CN
+language: zh-Hans
 timezone:
 
 # URL
@@ -63,7 +63,16 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
+# theme: landscape
+theme: next
+
+# Social links
+social:
+  github: https://github.com/qop
+  douban: http://www.douban.com/people/Sm_Qop/
+  zhihu: https://www.zhihu.com/people/a_jian
+
+since: 2011
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
