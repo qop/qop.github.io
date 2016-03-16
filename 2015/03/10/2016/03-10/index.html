@@ -36,7 +36,7 @@
 
 
 
-  <meta name="keywords" content="dota,碎碎念," />
+  <meta name="keywords" content="ci,nodejs,前端," />
 
 
 
@@ -47,19 +47,31 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="最近四周才打了两次dota，虽然操作依旧犀利，走位依旧淫荡，大局观更上一层楼了。但总感觉这个游戏离我渐行渐远了，因为只有在有基友的时候才会去玩它，一局游戏的胜利给我带来的刺激只能稍微抚平无聊生活的寂寞而已。
-　　十年war3，五年dota，这款团队合作型的对抗游戏已经伴随魔兽争霸风光了许久，经历了无数作弊反作弊，会员特权制度和诚信危机，地图的更新换代和节奏变化，排名算法的优化和调整。相比于真三的一">
+<meta name="description" content="一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。
+
+读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。
+1234&apos;echo $PATH&apos;,&apos;node -v&apos;,&apos;npm -v&apos;,&apos;npm config get registry&apos;
+
+清空destination，此处可以由用户（此处用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="游戏和生活">
-<meta property="og:url" content="http://qop.github.io/2014/06/08/2014/06-08/index.html">
+<meta property="og:title" content="ci系统">
+<meta property="og:url" content="http://qop.github.io/2015/03/10/2016/03-10/index.html">
 <meta property="og:site_name" content="qop's blog">
-<meta property="og:description" content="最近四周才打了两次dota，虽然操作依旧犀利，走位依旧淫荡，大局观更上一层楼了。但总感觉这个游戏离我渐行渐远了，因为只有在有基友的时候才会去玩它，一局游戏的胜利给我带来的刺激只能稍微抚平无聊生活的寂寞而已。
-　　十年war3，五年dota，这款团队合作型的对抗游戏已经伴随魔兽争霸风光了许久，经历了无数作弊反作弊，会员特权制度和诚信危机，地图的更新换代和节奏变化，排名算法的优化和调整。相比于真三的一">
-<meta property="og:updated_time" content="2016-02-23T08:13:08.000Z">
+<meta property="og:description" content="一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。
+
+读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。
+1234&apos;echo $PATH&apos;,&apos;node -v&apos;,&apos;npm -v&apos;,&apos;npm config get registry&apos;
+
+清空destination，此处可以由用户（此处用">
+<meta property="og:updated_time" content="2016-03-16T12:54:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="游戏和生活">
-<meta name="twitter:description" content="最近四周才打了两次dota，虽然操作依旧犀利，走位依旧淫荡，大局观更上一层楼了。但总感觉这个游戏离我渐行渐远了，因为只有在有基友的时候才会去玩它，一局游戏的胜利给我带来的刺激只能稍微抚平无聊生活的寂寞而已。
-　　十年war3，五年dota，这款团队合作型的对抗游戏已经伴随魔兽争霸风光了许久，经历了无数作弊反作弊，会员特权制度和诚信危机，地图的更新换代和节奏变化，排名算法的优化和调整。相比于真三的一">
+<meta name="twitter:title" content="ci系统">
+<meta name="twitter:description" content="一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。
+
+读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。
+1234&apos;echo $PATH&apos;,&apos;node -v&apos;,&apos;npm -v&apos;,&apos;npm config get registry&apos;
+
+清空destination，此处可以由用户（此处用">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -71,7 +83,7 @@
 
 
 
-  <title> 游戏和生活 | qop's blog </title>
+  <title> ci系统 | qop's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -216,7 +228,7 @@
             
             
               
-                游戏和生活
+                ci系统
               
             
           </h1>
@@ -225,8 +237,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2014-06-08T00:00:00+08:00" content="2014-06-08">
-              2014-06-08
+            <time itemprop="dateCreated" datetime="2015-03-10T00:00:00+08:00" content="2015-03-10">
+              2015-03-10
             </time>
           </span>
 
@@ -236,8 +248,8 @@
             
               <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2014/06/08/2014/06-08/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/06/08/2014/06-08/" itemprop="commentsCount"></span>
+              <a href="/2015/03/10/2016/03-10/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/03/10/2016/03-10/" itemprop="commentsCount"></span>
               </a>
             </span>
             
@@ -256,10 +268,36 @@
       
 
       
-        <span itemprop="articleBody"><p>　　最近四周才打了两次dota，虽然操作依旧犀利，走位依旧淫荡，大局观更上一层楼了。但总感觉这个游戏离我渐行渐远了，因为只有在有基友的时候才会去玩它，一局游戏的胜利给我带来的刺激只能稍微抚平无聊生活的寂寞而已。</p>
-<p>　　十年war3，五年dota，这款团队合作型的对抗游戏已经伴随魔兽争霸风光了许久，经历了无数作弊反作弊，会员特权制度和诚信危机，地图的更新换代和节奏变化，排名算法的优化和调整。相比于真三的一成不变，dota没有死在自己手上，但是一定会死在历史的滚滚车轮下。<br>　　从vs到浩方到歪歪，从各种内网到掌门人。掌门人，第一个打通校园网和电信网的对战平台，还有多少人记得呢？加菲盐，第一个优酷dota解说，还有多少人会想起呢？<br>　　说起优酷解说，不得不提到esports海涛和伍声2009。前者开创了将流量（优酷视频解说观众）变现（开淘宝店）的方式。而后者将外设店扩展到了零食店、服装店（利润远超明码标价的电脑外设），甚至服装流水线，从生产、库存到销售、运营都把控在自己手中，经营了自己的品牌，最近还进入传统行业，合伙开了一些定位精准的网咖，结合自己的知名度和影响力，生意甚是红火。<br>　　回想大一开始玩的这款游戏，伴随了多少个日日夜夜，也曾娱乐至上，也曾组队参赛，dota是本科生涯最浓重的一笔，超越了篮球、学习和恋爱。</p>
-<p>　　其实无聊的不是生活，而是生活方式。回头翻翻注册三年的知乎，注册五年的豆瓣，留下了太多的生活痕迹。<br>　　从大四后期（差不多是注册豆瓣之后）开始洗心革面拒绝三国杀和dota，沉浸于阅览室和实验室，开始进入了积极向上却又无比苦闷的生活，我研究生的老板你们懂的。<br>再往前就要翻人人——或者叫校内——了。那时候每天下课就会去人人上灌灌水，分享点图片或者视频，农场里种点菜，发发无聊的状态。<br>　　如果再往前呢，也许要去找腾讯帮我恢复一下qq空间的数据。<br>当然了我还没老到需要缅怀纯真年代或者凤凰花开的日子，只是每段时间都有不同的生活状态，每段时间都有不同的感悟。</p>
-<p>　　其实工作后的自己，险些陷入『一个人』的状态。<br>　　知乎上yol叔有个回答令我非常赞同，是一种话在口边却无法描述的状态，yol叔将之总结为『一个人的状态，总是最糟的』。开心亦或是沮丧都无法与人分享，沙县是吃买菜做菜也是吃，一个人就会荒唐地混日子，一个人不需要对别人负责，一个人死了也不会被惦记。<br>　　虽然没有那么夸张，但是能深切感受到的。一个人，夜深人静不想睡，一个人，不吃饭不锻炼，一个人沮丧彷徨无助。就算去社交网络上发发状态和别人互动一下也好。<br>　　其实『一个人』不是真的『一个人』，比如看书充实自己的内心，比如长跑学会与自己独处，这都不算一个人。当然了，如果有人能打开沉默寡言的你的话匣子，这也是幸运。<br>　　如果你在『一个人』的状态下玩游戏，那就是走火入魔，找三两个基友，开一个小黑店，互相调侃几句，当然要记得『我是在玩游戏，不是被游戏玩』。如果一个人，不妨去菜场和大叔大妈侃侃价，把带回来的食材用心料理一下，或者再简单点，尝试不同食材的配搭打出好喝的果汁。<br>　　毕竟唯美食与爱情不可辜负~</p>
+        <span itemprop="articleBody"><p>一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。</p>
+<ul>
+<li><p>读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。</p>
+<figure class="highlight ocaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">'echo</span> $<span class="type">PATH'</span>,</span><br><span class="line"><span class="symbol">'node</span> -v',</span><br><span class="line"><span class="symbol">'npm</span> -v',</span><br><span class="line"><span class="symbol">'npm</span> config get registry'</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>清空destination，此处可以由用户（此处用户指的是ci系统的用户，即业务开发）指定，如果不设置就读取默认配置，比如/dist文件夹。</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">rm</span> -rf dist</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>跑用户指定的构建脚本，gulp, grunt, webpack等各种方式，输出到/dist即可。这时候/dist里应该有<em>*/</em>.@(html|js|css|jpg|jpeg|png|gif)这些文件。</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"script"</span>: &#123;</span><br><span class="line">    <span class="string">"build"</span>: <span class="string">"gulp"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>文件名校验，文件名应该由小写字母、数字、分隔符、下划线和点组成。<code>/^[a-z0-9_\-\.\/]+$/</code></p>
+</li>
+<li><p>替换css中引用的相对路径，比如背景图，应该直接引用发到cdn上的静态文件地址。</p>
+</li>
+<li><p>压缩css。不多说了，推荐用clean-css。</p>
+</li>
+<li><p>压缩js。不多说，推荐用uglify-js。</p>
+</li>
+<li><p>压缩图片。图片推荐用imagemin，有针对jpg, jpeg, png, gif的工具。</p>
+</li>
+<li><p>给静态文件加md5。形如/dist/lib/zepto.min.js ==&gt; /dist/lib/zepto.min.md5.js</p>
+</li>
+<li><p>替换html中引用静态资源的相对路径。</p>
+</li>
+<li><p>上传ftp。</p>
+</li>
+<li><p>更新数据库版本号。</p>
+</li>
+</ul>
 </span>
       
     </div>
@@ -268,9 +306,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/dota/" rel="tag">#dota</a>
+            <a href="/tags/ci/" rel="tag">#ci</a>
           
-            <a href="/tags/碎碎念/" rel="tag">#碎碎念</a>
+            <a href="/tags/nodejs/" rel="tag">#nodejs</a>
+          
+            <a href="/tags/前端/" rel="tag">#前端</a>
           
         </div>
       
@@ -279,16 +319,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2014/01/31/2014/01-31/" rel="next" title="2013年终总结">
-                <i class="fa fa-chevron-left"></i> 2013年终总结
+              <a href="/2015/02/23/2016/02-23/" rel="next" title="python爬虫(一)">
+                <i class="fa fa-chevron-left"></i> python爬虫(一)
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2014/06/15/2014/06-15/" rel="prev" title="也说知乎">
-                也说知乎 <i class="fa fa-chevron-right"></i>
+              <a href="/2015/03/16/2016/03-16/" rel="prev" title="jsbridge">
+                jsbridge <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -482,9 +522,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'qopgithubio';
-      var disqus_identifier = '2014/06/08/2014/06-08/';
-      var disqus_title = '游戏和生活';
-      var disqus_url = 'http://qop.github.io/2014/06/08/2014/06-08/';
+      var disqus_identifier = '2015/03/10/2016/03-10/';
+      var disqus_title = 'ci系统';
+      var disqus_url = 'http://qop.github.io/2015/03/10/2016/03-10/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
