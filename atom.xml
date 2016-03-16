@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qop.github.io/"/>
-  <updated>2016-02-23T09:26:39.000Z</updated>
+  <updated>2016-03-16T12:44:43.000Z</updated>
   <id>http://qop.github.io/</id>
   
   <author>
@@ -14,6 +14,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ci系统</title>
+    <link href="http://qop.github.io/2015/03/16/2016/03-16/"/>
+    <id>http://qop.github.io/2015/03/16/2016/03-16/</id>
+    <published>2015-03-15T16:00:00.000Z</published>
+    <updated>2016-03-16T12:44:43.000Z</updated>
+    
+    <content type="html">&lt;p&gt;一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。&lt;/p&gt;
+&lt;figure class=&quot;highlight ocaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&#39;echo&lt;/span&gt; $&lt;span class=&quot;type&quot;&gt;PATH&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&#39;node&lt;/span&gt; -v&#39;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&#39;npm&lt;/span&gt; -v&#39;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&#39;npm&lt;/span&gt; config get registry&#39;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;清空destination，此处可以由用户（此处用户指的是ci系统的用户，即业务开发）指定，如果不设置就读取默认配置，比如/dist文件夹。&lt;/p&gt;
+&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;title&quot;&gt;rm&lt;/span&gt; -rf dist&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;跑用户指定的构建脚本，gulp, grunt, webpack等各种方式，输出到/dist即可。这时候/dist里应该有&lt;em&gt;*/&lt;/em&gt;.@(html|js|css|jpg|jpeg|png|gif)这些文件。&lt;/p&gt;
+&lt;figure class=&quot;highlight xquery&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;script&quot;&lt;/span&gt;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&quot;build&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;gulp&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;文件名校验，文件名应该由小写字母、数字、分隔符、下划线和点组成。&lt;code&gt;/^[a-z0-9_\-\.\/]+$/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;替换css中引用的相对路径，比如背景图，应该直接引用发到cdn上的静态文件地址。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;压缩css。不多说了，推荐用clean-css。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;压缩js。不多说，推荐用uglify-js。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;压缩图片。图片推荐用imagemin，有针对jpg, jpeg, png, gif的工具。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;给静态文件加md5。形如/dist/lib/zepto.min.js ==&amp;gt; /dist/lib/zepto.min.md5.js&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;替换html中引用静态资源的相对路径。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;上传ftp。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;更新数据库版本号。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。&lt;/p&gt;
+&lt;figur
+    
+    </summary>
+    
+    
+      <category term="ci" scheme="http://qop.github.io/tags/ci/"/>
+    
+      <category term="nodejs" scheme="http://qop.github.io/tags/nodejs/"/>
+    
+      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>python爬虫(一)</title>
