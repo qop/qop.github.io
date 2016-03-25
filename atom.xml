@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qop.github.io/"/>
-  <updated>2016-03-16T12:54:30.000Z</updated>
+  <updated>2016-03-25T07:18:46.000Z</updated>
   <id>http://qop.github.io/</id>
   
   <author>
@@ -14,6 +14,76 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>外卖整合沟通会</title>
+    <link href="http://qop.github.io/2015/11/20/2015/11-20/"/>
+    <id>http://qop.github.io/2015/11/20/2015/11-20/</id>
+    <published>2015-11-19T16:00:00.000Z</published>
+    <updated>2016-03-25T07:18:46.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;中美零售业互联网化对比&quot;&gt;&lt;a href=&quot;#中美零售业互联网化对比&quot; class=&quot;headerlink&quot; title=&quot;中美零售业互联网化对比&quot;&gt;&lt;/a&gt;中美零售业互联网化对比&lt;/h2&gt;&lt;p&gt;前十的电商公司，美国只有3家是新兴互联网公司，amazon, ebay, apple，美国的电商市场份额差距不大。&lt;br&gt;中国更符合互联网的721定律。&lt;/p&gt;
+&lt;h2 id=&quot;互联网到来时传统零售业对比。&quot;&gt;&lt;a href=&quot;#互联网到来时传统零售业对比。&quot; class=&quot;headerlink&quot; title=&quot;互联网到来时传统零售业对比。&quot;&gt;&lt;/a&gt;互联网到来时传统零售业对比。&lt;/h2&gt;&lt;p&gt;中国央视打广告去二三线城市开店就能赚钱。&lt;br&gt;美国公司的增长点基本来自全球化或者国家经历形式走强。&lt;/p&gt;
+&lt;h2 id=&quot;外卖业务在中美环境下的差异性&quot;&gt;&lt;a href=&quot;#外卖业务在中美环境下的差异性&quot; class=&quot;headerlink&quot; title=&quot;外卖业务在中美环境下的差异性&quot;&gt;&lt;/a&gt;外卖业务在中美环境下的差异性&lt;/h2&gt;&lt;p&gt;人口密度，人力成本，商家sku，人口数量。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;中美零售业互联网化对比&quot;&gt;&lt;a href=&quot;#中美零售业互联网化对比&quot; class=&quot;headerlink&quot; title=&quot;中美零售业互联网化对比&quot;&gt;&lt;/a&gt;中美零售业互联网化对比&lt;/h2&gt;&lt;p&gt;前十的电商公司，美国只有3家是新兴互联网公司，amazon, eba
+    
+    </summary>
+    
+    
+      <category term="O2O" scheme="http://qop.github.io/tags/O2O/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试</title>
+    <link href="http://qop.github.io/2015/10/28/2015/10-28/"/>
+    <id>http://qop.github.io/2015/10/28/2015/10-28/</id>
+    <published>2015-10-27T16:00:00.000Z</published>
+    <updated>2016-03-25T07:13:56.000Z</updated>
+    
+    <content type="html">&lt;p&gt;最近招人经常需要面试，大概整理下面试的思路。&lt;/p&gt;
+&lt;h3 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识&quot;&gt;&lt;/a&gt;基础知识&lt;/h3&gt;&lt;p&gt;HTML&lt;br&gt;CSS&lt;br&gt;javascript&lt;br&gt;DOM &amp;amp; BOM基础知识&lt;/p&gt;
+&lt;h3 id=&quot;进阶知识&quot;&gt;&lt;a href=&quot;#进阶知识&quot; class=&quot;headerlink&quot; title=&quot;进阶知识&quot;&gt;&lt;/a&gt;进阶知识&lt;/h3&gt;&lt;p&gt;持续集成&lt;br&gt;前端工程化&lt;br&gt;渐进增强与平稳退化&lt;br&gt;操作系统-linux&lt;br&gt;git&lt;br&gt;浏览器&lt;br&gt;网络-HTTP&lt;br&gt;算法&lt;br&gt;设计模式&lt;br&gt;hybrid框架&lt;br&gt;移动端开发&lt;/p&gt;
+&lt;h3 id=&quot;前端新技术&quot;&gt;&lt;a href=&quot;#前端新技术&quot; class=&quot;headerlink&quot; title=&quot;前端新技术&quot;&gt;&lt;/a&gt;前端新技术&lt;/h3&gt;&lt;p&gt;ES6&lt;br&gt;angularJS&lt;br&gt;react&lt;/p&gt;
+&lt;p&gt;具体内容可参考：&lt;a href=&quot;!https://mdluo.github.io/blog/about-front-end-interview/&quot;&gt;关于前端面试&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近招人经常需要面试，大概整理下面试的思路。&lt;/p&gt;
+&lt;h3 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识&quot;&gt;&lt;/a&gt;基础知识&lt;/h3&gt;&lt;p&gt;HTML&lt;br&gt;CSS&lt;br&gt;javascript&lt;br&gt;DOM
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端分享</title>
+    <link href="http://qop.github.io/2015/06/23/2015/06-23/"/>
+    <id>http://qop.github.io/2015/06/23/2015/06-23/</id>
+    <published>2015-06-22T16:00:00.000Z</published>
+    <updated>2016-03-25T07:14:54.000Z</updated>
+    
+    <content type="html">&lt;p&gt;频度：每两周一次&lt;br&gt;时间：安排在每个迭代结束的周五下午，时长控制在1-2小时&lt;br&gt;流程：内容讲解，QA，开脑洞&lt;br&gt;形式：可以但不仅限于ppt、浏览器、ide&lt;br&gt;内容：新技术或者设计的学习分享（比如reactjs、angularjs、ES6中的新特性、html5和css3等），系统级分享（比如前端缓存方案、前端性能优化、cdn原理、bigpipe、前后端分离、gulpjs等前端工程化工具等），经验分享（jsbridge设计与实现，photoshop，灵活的html，比较大的前端项目的开发经验和踩过的坑），标准解读（js中经常被误解误用的一些概念）&lt;br&gt;主题及标准：每个人都可以提，随时更新主题，鼓励学习各种欣欣向荣的新技术，如果能转化到生产环境更好。&lt;br&gt;流程：主持人提前一个月联系分享人并确定分享内容，并负责订会议室买水果饮料（如果有经费- -）等后勤工作，分享人会前或者会后发出相关材料。&lt;br&gt;评价标准：NPS。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;频度：每两周一次&lt;br&gt;时间：安排在每个迭代结束的周五下午，时长控制在1-2小时&lt;br&gt;流程：内容讲解，QA，开脑洞&lt;br&gt;形式：可以但不仅限于ppt、浏览器、ide&lt;br&gt;内容：新技术或者设计的学习分享（比如reactjs、angularjs、ES6中的新特性、html5
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>jsbridge</title>
@@ -382,6 +452,40 @@
   </entry>
   
   <entry>
+    <title>移动端页面闪动</title>
+    <link href="http://qop.github.io/2014/05/28/2014/05-28/"/>
+    <id>http://qop.github.io/2014/05/28/2014/05-28/</id>
+    <published>2014-05-27T16:00:00.000Z</published>
+    <updated>2016-03-25T07:21:07.000Z</updated>
+    
+    <content type="html">&lt;p&gt;在用position:absulote+zindex!=0时用transform会偶尔出现页面会闪的现象，解决方法有三：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;-webkit-backface-visibility: hidden;&lt;br&gt;-webkit-perspective: 1000;&lt;br&gt;该方法对于sprite图无效。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;body {-webkit-transform:translate3d(0,0,0);}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;.no-flick{-webkit-transform:translate3d(0,0,0);}&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;比较多使用的解决方法是 -webkit-backface-visibility: hidden;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在用position:absulote+zindex!=0时用transform会偶尔出现页面会闪的现象，解决方法有三：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;-webkit-backface-visibility: hidden;&lt;br&gt;-webkit-perspective:
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="移动端" scheme="http://qop.github.io/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2013年终总结</title>
     <link href="http://qop.github.io/2014/01/31/2014/01-31/"/>
     <id>http://qop.github.io/2014/01/31/2014/01-31/</id>
@@ -454,6 +558,44 @@
   </entry>
   
   <entry>
+    <title>sublime配置</title>
+    <link href="http://qop.github.io/2013/04/15/2013/04-15/"/>
+    <id>http://qop.github.io/2013/04/15/2013/04-15/</id>
+    <published>2013-04-14T16:00:00.000Z</published>
+    <updated>2016-03-25T07:14:49.000Z</updated>
+    
+    <content type="html">&lt;p&gt;###空格分隔符的设置&lt;br&gt;需要注意，代码规范是使用空格做分隔符，所以需要对编辑器进行一些设置，将Tab转化为四个空格。&lt;br&gt;在Sublime—Preferences—Setting User中添加以下配置：&lt;/p&gt;
+&lt;figure class=&quot;highlight json&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &quot;&lt;span class=&quot;attribute&quot;&gt;tab_size&lt;/span&gt;&quot;: &lt;span class=&quot;value&quot;&gt;&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &quot;&lt;span class=&quot;attribute&quot;&gt;translate_tabs_to_spaces&lt;/span&gt;&quot;: &lt;span class=&quot;value&quot;&gt;&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;###插件的安装&lt;br&gt;推荐先安装Package Control，然后使用Package Control组件安装Sublime的插件。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;按Ctrl+`调出console&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;粘贴以下代码到底部命令行并回车：import urllib2,os; pf=’Package Control.sublime-package’; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler()));open(os.path.join(ipp,pf),’wb’).write(urllib2.urlopen(‘&lt;a href=&quot;http://sublime.wbond.net/&amp;#39;+pf.replace(&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://sublime.wbond.net/&amp;#39;+pf.replace(&lt;/a&gt;‘ ‘,’%20’)).read()); print(‘Please restart Sublime Text to finish installation’)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;重启Sublime Text 2。如果在Perferences-&amp;gt;package settings中看到package control这一项，则安装成功。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;按下Command+Shift+P调出命令面板。&lt;/li&gt;
+&lt;li&gt;输入install 调出 Install Package 选项并回车，然后在列表中选中要安装的插件。&lt;/li&gt;
+&lt;li&gt;推荐插件：JS Format, SublimeLinter, ClickboardHistory。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;###空格分隔符的设置&lt;br&gt;需要注意，代码规范是使用空格做分隔符，所以需要对编辑器进行一些设置，将Tab转化为四个空格。&lt;br&gt;在Sublime—Preferences—Setting User中添加以下配置：&lt;/p&gt;
+&lt;figure class=&quot;highlight j
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="开发环境" scheme="http://qop.github.io/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    
+      <category term="编辑器" scheme="http://qop.github.io/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2012年终总结</title>
     <link href="http://qop.github.io/2012/12/31/2012/12-31/"/>
     <id>http://qop.github.io/2012/12/31/2012/12-31/</id>
@@ -487,57 +629,6 @@
     
     
       <category term="年终总结" scheme="http://qop.github.io/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2011年终总结</title>
-    <link href="http://qop.github.io/2012/01/01/2012/01-01/"/>
-    <id>http://qop.github.io/2012/01/01/2012/01-01/</id>
-    <published>2011-12-31T16:00:00.000Z</published>
-    <updated>2016-02-23T08:13:08.000Z</updated>
-    
-    <content type="html">&lt;p&gt;视野更开阔了，但是积累还不够。&lt;br&gt;体会到看书的乐趣，但是闲书居多。&lt;br&gt;知识增长了，但是广度深度都要继续努力。&lt;br&gt;学会自省了，但是对弱点却束手无策。&lt;br&gt;希望2012年能看到以上几方面的质变。&lt;br&gt;不过还是先期待一下回家和葫芦娃搞起。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;视野更开阔了，但是积累还不够。&lt;br&gt;体会到看书的乐趣，但是闲书居多。&lt;br&gt;知识增长了，但是广度深度都要继续努力。&lt;br&gt;学会自省了，但是对弱点却束手无策。&lt;br&gt;希望2012年能看到以上几方面的质变。&lt;br&gt;不过还是先期待一下回家和葫芦娃搞起。&lt;/p&gt;
-
-    
-    </summary>
-    
-    
-      <category term="年终总结" scheme="http://qop.github.io/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Stay hungry, stay foolish.</title>
-    <link href="http://qop.github.io/2011/12/24/2011/12-24/"/>
-    <id>http://qop.github.io/2011/12/24/2011/12-24/</id>
-    <published>2011-12-23T16:00:00.000Z</published>
-    <updated>2016-02-23T08:13:08.000Z</updated>
-    
-    <content type="html">&lt;p&gt;　　本来想着写一篇《二〇一一大事记》的，但是想想似乎没多少大事可写。因为乍一看去在学校的每一天每一周都是类似，在实验室、食堂、寝室之间穿梭着，在代码、书影音、社交网络中循环着。仔细回忆回忆吧，又感到头疼，就又生出一种感到记忆力急剧衰退的惶恐。遂只能借助于豆瓣、微博、人人、QQ这些每天都会刷一下的社交工具。他们忠实地为你记录着生活的一点一滴，精确到每一秒，但是想立刻知道譬如“今年最令人开心的几件事”，“今年最痛苦的回忆”，“今年实现了哪些突破”这种问题的答案却不那么容易。需要在浩如烟海的信息中寻找资料的社交网络甚至不如一个日记本来得方便快捷（这样看来也难怪数据仓库、统计分析与决策支持这么有前景了）。当然我没有记日记的习惯和毅力，否则也没有现在这样的痛苦了。&lt;/p&gt;
-&lt;p&gt;　　写个“大事记”的想法看来是破灭了，因为我最近对于社交网络产生了极其严重的抵抗心理。有段时间我的课余时间大概是这么度过的：每天把QQ、微博、豆瓣、人人、BBS刷一下，看到别人分享了有意思的日志、相册、视频再点开看看，看完回头再刷一遍，如此往复，娱乐至死。这大概是许多人的问题，我们花费了大量的时间，收获的却是知识的片段和对自己心智的侵蚀。在获取信息和社交方面，也远不如针对性的使用搜索引擎和短信电话来的有效。但是关于被动学习和主动学习这个问题，我只是意识到它的危害且略有改善，真正克服还有很长的路要走。因为一旦我陷入了刷网页看视频这样的状态就很难依靠自身力量走出来，然后就是，“哇，十点多了，要回去了”。&lt;/p&gt;
-&lt;p&gt;可是，说好的学习呢？&lt;/p&gt;
-&lt;p&gt;　　前几天一直泡图书馆，不上网不聊QQ，希望从根源上解决可能出现的迷失问题。可是如你所见，今天我又开始花大把时间刷豆瓣了，这才保持了三四天而已。其实这种体会上中学就有，自己还曾经创建了一套理论：大概就是说每隔一段时间就变得特别不想学习，特想放纵一下。整体有个大周期，每个学科又有个小周期，叠加起来就是每门学科的懈怠周期（自创词汇，表示两次懈怠顶峰的时间间隔）。并且这个类似于三角函数曲线的成绩-时间曲线是滞后于懈怠-时间曲线的。具体周期和时间因人而异，我的整体懈怠周期是一个月，基本都在每次考试之后，滞后时间大概是半个月到一个月之间。具体每门学科有考得好考得不好的，也是因为懈怠周期不一致。假如把周期调好了，使考试时每门学科都处在成绩-时间曲线的波峰位置是有可能考出最好名次的。（当然，这个模型是排除不可抗因素的，比如生病或者外界干扰导致的情绪失常。）&lt;/p&gt;
-&lt;p&gt;　　似乎越扯越远了，其实我就是想陈述一个我现在越来越容易对学习工作感到疲乏的事实。但是这种懈怠周期从一个月到一周的变化也不是一朝一夕就能形成的。对比中学的一月一懈怠、大一的继续保持、大三大四的颓废沉沦和现在的每周都懈怠，我发现最大的区别甚至不是自制力的下降。中学时期是因为心思单纯、目标明确，所以才能孜孜不倦、心无旁骛地持续学习吧。到了大一，基本能延续晚上自习的好习惯。但是自从大二买了电脑开始玩游戏就一发不可收拾了，面对诱惑有过挣扎和抵抗，但不幸的是还是败下阵来。至于研究生阶段，游戏不怎么玩了，能稳定地工作学习了，但是在电脑面前坐太多又疏于锻炼，所以注意力没有以前集中，而且相比从前更加容易疲倦。&lt;/p&gt;
-&lt;p&gt;　　10月份的时候看了《把时间当做朋友》，感触超过10本一流小说。因为他真的说到我的痛处了，那就是人天生的懒惰。书中还提到了立即行动和推迟满足感（引用自《少有人走的路》）的观点，如果能够坚持执行确实对于拖延是一剂良药。可是难以坚持这件事本身不就是病症所在吗？&lt;/p&gt;
-&lt;p&gt;　　这么看来远离确实是一个办法，可能我们还需要一点运动。”雨宫萤 今天下午 说：宅的生活方式产生了严重后果。人们不锻炼，如今抑郁程度已经增加了10倍，抑郁症的平均发病年龄降为15岁，而在60年代，是30岁。注意力缺陷多动症（ADD）的病例亦呈指数上升。——Tal“如果对比一下十年前和现在大家在专注方面的精神状态，这种观点应该很容易得到吧。十天前我分享过一个关于跑步的日志，当你跑步的时候，你就有了光芒。真是说的太好了，那种熬过疲倦期之后的有如新生的自在和精神上的满足感远胜于那几秒寒颤之后无边的空虚与落寞。&lt;/p&gt;
-&lt;p&gt;　　我想我现在有点能够理解印度教苦行的修炼行为了。乔布斯19岁光着脚、穿着破烂衣服前往印度，这将近一年的沿着佛教圣地的朝圣经历对乔布斯的影响应该是相当大的，佛教、瑜伽、素食也因此成为了他生活中必不可少的东西。这几样东西可以说影响了乔布斯一生，他对苹果产品的外观、选材都能看出明显的禅宗痕迹。他在斯坦福演讲的主题”Stay hungry, stay foolish.“，被广泛地翻译为“求知若饥，虚心若愚”。但是我觉得并不能完全表达他的意思，至少从他的生活经历看来，他是很推崇通过克制内心欲望来实现精神理想的。乔布斯算不算伟大也许需要时间来下结论，但是他对计算机和动画片的影响是非常巨大的。他的设计理念或许不新颖，但是却站在了科技和人文的路口，做出了科技和人文相结合的最成功的产品。&lt;/p&gt;
-&lt;p&gt;　　最后，实在不知道取什么标题，就盗用乔布斯的名言吧。Stay hungry, stay foolish.&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　本来想着写一篇《二〇一一大事记》的，但是想想似乎没多少大事可写。因为乍一看去在学校的每一天每一周都是类似，在实验室、食堂、寝室之间穿梭着，在代码、书影音、社交网络中循环着。仔细回忆回忆吧，又感到头疼，就又生出一种感到记忆力急剧衰退的惶恐。遂只能借助于豆瓣、微博、人人、Q
-    
-    </summary>
-    
-    
-      <category term="读书笔记" scheme="http://qop.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
