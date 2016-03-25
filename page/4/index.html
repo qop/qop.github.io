@@ -214,6 +214,98 @@
             
             
               
+                <a class="post-title-link" href="/2014/05/28/2014/05-28/" itemprop="url">
+                  移动端页面闪动
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2014-05-28T00:00:00+08:00" content="2014-05-28">
+              2014-05-28
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2014/05/28/2014/05-28/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/05/28/2014/05-28/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <p>在用position:absulote+zindex!=0时用transform会偶尔出现页面会闪的现象，解决方法有三：</p>
+<ul>
+<li><p>-webkit-backface-visibility: hidden;<br>-webkit-perspective: 1000;<br>该方法对于sprite图无效。</p>
+</li>
+<li><p>body {-webkit-transform:translate3d(0,0,0);}</p>
+</li>
+<li><p>.no-flick{-webkit-transform:translate3d(0,0,0);}</p>
+</li>
+</ul>
+<p>比较多使用的解决方法是 -webkit-backface-visibility: hidden;</p>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 <a class="post-title-link" href="/2014/01/31/2014/01-31/" itemprop="url">
                   2013年终总结
                 </a>
@@ -545,103 +637,6 @@
 
 
     
-      
-
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                <a class="post-title-link" href="/2012/12/31/2012/12-31/" itemprop="url">
-                  2012年终总结
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2012-12-31T00:00:00+08:00" content="2012-12-31">
-              2012-12-31
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2012/12/31/2012/12-31/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2012/12/31/2012/12-31/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <p>　　现在是2012年12月31日22:09，离新的一年还有不到两个小时。回首去年：</p>
-<p>　　那时的欣欣向荣还历历在目，豪言壮语也犹在耳边，但是最近这几个月实在是过的不能说好。</p>
-<p>　　首先是实验室的工作，依然是遍地撒网，却没多少收获。今年自己的主要工作在于模块开发（SMDB系统安全模块, CMIS维护），前端优化（SMDB）和工作交接（肖宁CMIS，杨发强SMDB）。<br>　　感觉自己模块开发上的工作还说的过去，虽然可能老师觉得不够好，但是自己也算尽力了，在写论文之前基本完成了所有todo的处理。（可能还有些bug需要测试）。<br>　　前端优化的过程花了很长时间，这也是自己非常看重的一块，因此挺用心的。但是由于自己能力的欠缺，过程中还是遇到了很多问题，但是收获了不少。感觉写代码的能力和bug修复经验上了一个台阶，一些教训也是花钱买不来的。因为重构是一个大变动，需要其他模块开发人员协同，我对其中一个学妹真是无力吐槽。各种不靠谱、不思进取，遇到问题就会叫人帮忙，同样的错误一犯再犯，你这能力和态度确定你要写代码？<br>　　工作交接这一块做的很差劲，感觉和两个学弟的交流总是有障碍。我觉得和自己的性格有关吧，熟悉的人我才比较愿意说话，看的比较顺眼和气场相符的才愿意深入交流，看到别人有“坏习惯”就会下意识地躲避。连面试我的几个面试官和hr都反映性格内向不善交流（不过也是事后和hr美女姐姐交流才知道的），哎，都是吃的老实的亏！<br>　　总的看来，自己在实验室做事不像开始那般不知所措，但是激情似乎也日益褪去了。因为在发现实验室这样一个没有什么绩效考核和物质激励的环境下归根到底是能者多劳，所以自己开始和稀泥，而且越和越熟练了。真不喜欢这样的自己，希望工作时能专注于自己喜欢的东西，主动、积极。<br>　　第二是找工作了，过程很是曲折，但结果还比较满意。一段痛苦的挣扎，一场突如其来的病症，不堪回首。不过在全方位了解了行业和公司发展之后觉得最终签的工作还挺满意，地点在上海也不错。<br>　　第三是写毕业论文，“赶在写论文之前将手里的todo做完”其实是“推迟写论文的时间”的另外一种说法，面对这么push的老板，我真是无力吐槽。好在论文需要的代码都已经完成，下面就是好好组织了，希望能顺利答辩，顺利毕业。</p>
-<p>　　可能是因为快要离校的原因，最近思考了不少问题，除了像行李托运、上海租房这样琐碎的事情之外，觉得构建个人知识库是一件挺重要的事情。回首自己本科四年、研究生两年半，待到毕业之后到底和六年前的我有多大的不同？身高基本没变，体重轻了不少，记忆力衰退得厉害，精神没有从前集中了，谈了一场不靠谱的恋爱，没有存款。收获的是什么？一纸文凭和一张offer，要进入社会了。其他的呢？看了一百多本书，修了几十门课，可是现在傅里叶变换不会算了，电路图不会画了，方程组都不会解了。看了不少闲书，也做了些笔记和摘抄，但是装到脑袋里的东西还太少。<br>　　现在我觉得建立知识库（使用Evernote）是如此重要以至于我这两天都没写论文在想这个。而Evernote的好处在于云端同步、结构清晰、功能简单。具体方法是：</p>
-<ul>
-<li>收集自己感兴趣或者需要的知识</li>
-<li>建立合适的树状结构将知识分类整理</li>
-<li>定期整理和总结自己的知识库</li>
-<li>随时记录自己的灵感和待办</li>
-</ul>
-<p>　　要警惕：不把信息当作知识，不把收藏当作学习，不把阅读当作思考，不把储存当作掌握。</p>
-<p>　　实验室要关门了，明天继续总结。</p>
-<p>——————————————————2013分割线———————————————————</p>
-<p>　　中午来到实验室，把Evernote的目录又重新设计了一下，准备下午把以前写的文档和读书笔记、下载的学习资料整理总结了放上去，希望2013能保持住这个习惯。</p>
-<p>　　刚才翻读书笔记，找到那本当时感触颇深的《把时间当做朋友》，对比最近的生活状态，真是羞愧不已。<br>　　当时在本子上记下了几点：这个事情干不好不是因为你没有兴趣，没有兴趣却是因为没有干好；人作为动物的本能都是目光短浅的，这和订下什么三年计划五年计划是相悖的，越是短期的目标越清晰，越容易实现；拖延很多时候是完美主义作祟，不要总想着最后能做成什么样，立刻行动才是真理。</p>
-
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -684,7 +679,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">22</span>
+              <span class="site-state-item-count">23</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -698,7 +693,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">26</span>
+              <span class="site-state-item-count">27</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qop.github.io/"/>
-  <updated>2016-03-25T07:18:46.000Z</updated>
+  <updated>2016-03-25T07:26:23.000Z</updated>
   <id>http://qop.github.io/</id>
   
   <author>
@@ -14,6 +14,113 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jsbridge</title>
+    <link href="http://qop.github.io/2016/03/16/2016/03-16/"/>
+    <id>http://qop.github.io/2016/03/16/2016/03-16/</id>
+    <published>2016-03-15T16:00:00.000Z</published>
+    <updated>2016-03-25T07:26:23.000Z</updated>
+    
+    <content type="html">&lt;p&gt;ing&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;ing&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="jsbridge" scheme="http://qop.github.io/tags/jsbridge/"/>
+    
+      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ci系统</title>
+    <link href="http://qop.github.io/2016/03/10/2016/03-10/"/>
+    <id>http://qop.github.io/2016/03/10/2016/03-10/</id>
+    <published>2016-03-09T16:00:00.000Z</published>
+    <updated>2016-03-25T07:26:20.000Z</updated>
+    
+    <content type="html">&lt;p&gt;一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。&lt;/p&gt;
+&lt;figure class=&quot;highlight ocaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&#39;echo&lt;/span&gt; $&lt;span class=&quot;type&quot;&gt;PATH&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&#39;node&lt;/span&gt; -v&#39;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&#39;npm&lt;/span&gt; -v&#39;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&#39;npm&lt;/span&gt; config get registry&#39;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;清空destination，此处可以由用户（此处用户指的是ci系统的用户，即业务开发）指定，如果不设置就读取默认配置，比如/dist文件夹。&lt;/p&gt;
+&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;title&quot;&gt;rm&lt;/span&gt; -rf dist&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;跑用户指定的构建脚本，gulp, grunt, webpack等各种方式，输出到/dist即可。这时候/dist里应该有&lt;em&gt;*/&lt;/em&gt;.@(html|js|css|jpg|jpeg|png|gif)这些文件。&lt;/p&gt;
+&lt;figure class=&quot;highlight xquery&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;script&quot;&lt;/span&gt;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&quot;build&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;gulp&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;文件名校验，文件名应该由小写字母、数字、分隔符、下划线和点组成。&lt;code&gt;/^[a-z0-9_\-\.\/]+$/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;替换css中引用的相对路径，比如背景图，应该直接引用发到cdn上的静态文件地址。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;压缩css。不多说了，推荐用clean-css。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;压缩js。不多说，推荐用uglify-js。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;压缩图片。图片推荐用imagemin，有针对jpg, jpeg, png, gif的工具。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;给静态文件加md5。形如/dist/lib/zepto.min.js ==&amp;gt; /dist/lib/zepto.min.md5.js&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;替换html中引用静态资源的相对路径。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;上传ftp。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;更新数据库版本号。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。&lt;/p&gt;
+&lt;figur
+    
+    </summary>
+    
+    
+      <category term="ci" scheme="http://qop.github.io/tags/ci/"/>
+    
+      <category term="nodejs" scheme="http://qop.github.io/tags/nodejs/"/>
+    
+      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python爬虫(一)</title>
+    <link href="http://qop.github.io/2016/02/23/2016/02-23/"/>
+    <id>http://qop.github.io/2016/02/23/2016/02-23/</id>
+    <published>2016-02-22T16:00:00.000Z</published>
+    <updated>2016-03-25T07:26:16.000Z</updated>
+    
+    <content type="html">&lt;p&gt;之前用python写过一些小工具，非常方便，但是没有系统学习过，所以想带着做一个简单爬虫的目的，系统地学习一下这个语言。&lt;br&gt;TODO&lt;/p&gt;
+&lt;p&gt;——————————20160314 太忙了的分割线——————————&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;之前用python写过一些小工具，非常方便，但是没有系统学习过，所以想带着做一个简单爬虫的目的，系统地学习一下这个语言。&lt;br&gt;TODO&lt;/p&gt;
+&lt;p&gt;——————————20160314 太忙了的分割线——————————&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://qop.github.io/tags/python/"/>
+    
+      <category term="爬虫" scheme="http://qop.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>外卖整合沟通会</title>
@@ -82,113 +189,6 @@
     
     
       <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jsbridge</title>
-    <link href="http://qop.github.io/2015/03/16/2016/03-16/"/>
-    <id>http://qop.github.io/2015/03/16/2016/03-16/</id>
-    <published>2015-03-15T16:00:00.000Z</published>
-    <updated>2016-03-16T12:54:30.000Z</updated>
-    
-    <content type="html">&lt;p&gt;ing&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;ing&lt;/p&gt;
-
-    
-    </summary>
-    
-    
-      <category term="jsbridge" scheme="http://qop.github.io/tags/jsbridge/"/>
-    
-      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ci系统</title>
-    <link href="http://qop.github.io/2015/03/10/2016/03-10/"/>
-    <id>http://qop.github.io/2015/03/10/2016/03-10/</id>
-    <published>2015-03-09T16:00:00.000Z</published>
-    <updated>2016-03-16T12:54:12.000Z</updated>
-    
-    <content type="html">&lt;p&gt;一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。&lt;/p&gt;
-&lt;figure class=&quot;highlight ocaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&#39;echo&lt;/span&gt; $&lt;span class=&quot;type&quot;&gt;PATH&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&#39;node&lt;/span&gt; -v&#39;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&#39;npm&lt;/span&gt; -v&#39;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;&#39;npm&lt;/span&gt; config get registry&#39;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;清空destination，此处可以由用户（此处用户指的是ci系统的用户，即业务开发）指定，如果不设置就读取默认配置，比如/dist文件夹。&lt;/p&gt;
-&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;title&quot;&gt;rm&lt;/span&gt; -rf dist&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;跑用户指定的构建脚本，gulp, grunt, webpack等各种方式，输出到/dist即可。这时候/dist里应该有&lt;em&gt;*/&lt;/em&gt;.@(html|js|css|jpg|jpeg|png|gif)这些文件。&lt;/p&gt;
-&lt;figure class=&quot;highlight xquery&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&quot;script&quot;&lt;/span&gt;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;string&quot;&gt;&quot;build&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;gulp&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;文件名校验，文件名应该由小写字母、数字、分隔符、下划线和点组成。&lt;code&gt;/^[a-z0-9_\-\.\/]+$/&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;替换css中引用的相对路径，比如背景图，应该直接引用发到cdn上的静态文件地址。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;压缩css。不多说了，推荐用clean-css。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;压缩js。不多说，推荐用uglify-js。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;压缩图片。图片推荐用imagemin，有针对jpg, jpeg, png, gif的工具。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;给静态文件加md5。形如/dist/lib/zepto.min.js ==&amp;gt; /dist/lib/zepto.min.md5.js&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;替换html中引用静态资源的相对路径。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;上传ftp。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;更新数据库版本号。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。&lt;/p&gt;
-&lt;figur
-    
-    </summary>
-    
-    
-      <category term="ci" scheme="http://qop.github.io/tags/ci/"/>
-    
-      <category term="nodejs" scheme="http://qop.github.io/tags/nodejs/"/>
-    
-      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python爬虫(一)</title>
-    <link href="http://qop.github.io/2015/02/23/2016/02-23/"/>
-    <id>http://qop.github.io/2015/02/23/2016/02-23/</id>
-    <published>2015-02-22T16:00:00.000Z</published>
-    <updated>2016-03-16T12:48:50.000Z</updated>
-    
-    <content type="html">&lt;p&gt;之前用python写过一些小工具，非常方便，但是没有系统学习过，所以想带着做一个简单爬虫的目的，系统地学习一下这个语言。&lt;br&gt;TODO&lt;/p&gt;
-&lt;p&gt;——————————20160314 太忙了的分割线——————————&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;之前用python写过一些小工具，非常方便，但是没有系统学习过，所以想带着做一个简单爬虫的目的，系统地学习一下这个语言。&lt;br&gt;TODO&lt;/p&gt;
-&lt;p&gt;——————————20160314 太忙了的分割线——————————&lt;/p&gt;
-
-    
-    </summary>
-    
-    
-      <category term="python" scheme="http://qop.github.io/tags/python/"/>
-    
-      <category term="爬虫" scheme="http://qop.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
@@ -332,6 +332,29 @@
     
     
       <category term="阶层" scheme="http://qop.github.io/tags/%E9%98%B6%E5%B1%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Best Practices for Speeding Up Your Web Site</title>
+    <link href="http://qop.github.io/2014/07/26/2014/07-26/"/>
+    <id>http://qop.github.io/2014/07/26/2014/07-26/</id>
+    <published>2014-07-25T16:00:00.000Z</published>
+    <updated>2016-03-25T07:25:30.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Make Fewer HTTP Requests&lt;br&gt;Use a Content Delivery Network&lt;br&gt;Add an Expires or a Cache-Control Header&lt;br&gt;Gzip Components&lt;br&gt;Put Stylesheets at the Top&lt;br&gt;Put Scripts at the Bottom&lt;br&gt;Avoid CSS Expressions&lt;br&gt;Make JavaScript and CSS External&lt;br&gt;Reduce DNS Lookups&lt;br&gt;Minify JavaScript and CSS&lt;br&gt;Avoid Redirects&lt;br&gt;Remove Duplicate Scripts&lt;br&gt;Configure ETags&lt;br&gt;Make Ajax Cacheable&lt;br&gt;Flush the Buffer Early&lt;br&gt;Use GET for AJAX Requests&lt;br&gt;Post-load Components&lt;br&gt;Preload Components&lt;br&gt;Reduce the Number of DOM Elements&lt;br&gt;Split Components Across Domains&lt;br&gt;Minimize the Number of iframes&lt;br&gt;No 404s&lt;br&gt;Reduce Cookie Size&lt;br&gt;Use Cookie-free Domains for Components&lt;br&gt;Minimize DOM Access&lt;br&gt;Develop Smart Event Handlers&lt;br&gt;Choose &lt;link&gt; over @import&lt;br&gt;Avoid Filters&lt;br&gt;Optimize Images&lt;br&gt;Optimize CSS Sprites&lt;br&gt;Don’ t Scale Images in HTML&lt;br&gt;Make favicon.ico Small and Cacheable&lt;br&gt;Keep Components under 25K&lt;br&gt;Pack Components into a Multipart Document&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Make Fewer HTTP Requests&lt;br&gt;Use a Content Delivery Network&lt;br&gt;Add an Expires or a Cache-Control Header&lt;br&gt;Gzip Components&lt;br&gt;Put Styleshe
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="转载" scheme="http://qop.github.io/tags/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
@@ -592,43 +615,6 @@
       <category term="开发环境" scheme="http://qop.github.io/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
     
       <category term="编辑器" scheme="http://qop.github.io/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2012年终总结</title>
-    <link href="http://qop.github.io/2012/12/31/2012/12-31/"/>
-    <id>http://qop.github.io/2012/12/31/2012/12-31/</id>
-    <published>2012-12-30T16:00:00.000Z</published>
-    <updated>2016-02-23T08:13:08.000Z</updated>
-    
-    <content type="html">&lt;p&gt;　　现在是2012年12月31日22:09，离新的一年还有不到两个小时。回首去年：&lt;/p&gt;
-&lt;p&gt;　　那时的欣欣向荣还历历在目，豪言壮语也犹在耳边，但是最近这几个月实在是过的不能说好。&lt;/p&gt;
-&lt;p&gt;　　首先是实验室的工作，依然是遍地撒网，却没多少收获。今年自己的主要工作在于模块开发（SMDB系统安全模块, CMIS维护），前端优化（SMDB）和工作交接（肖宁CMIS，杨发强SMDB）。&lt;br&gt;　　感觉自己模块开发上的工作还说的过去，虽然可能老师觉得不够好，但是自己也算尽力了，在写论文之前基本完成了所有todo的处理。（可能还有些bug需要测试）。&lt;br&gt;　　前端优化的过程花了很长时间，这也是自己非常看重的一块，因此挺用心的。但是由于自己能力的欠缺，过程中还是遇到了很多问题，但是收获了不少。感觉写代码的能力和bug修复经验上了一个台阶，一些教训也是花钱买不来的。因为重构是一个大变动，需要其他模块开发人员协同，我对其中一个学妹真是无力吐槽。各种不靠谱、不思进取，遇到问题就会叫人帮忙，同样的错误一犯再犯，你这能力和态度确定你要写代码？&lt;br&gt;　　工作交接这一块做的很差劲，感觉和两个学弟的交流总是有障碍。我觉得和自己的性格有关吧，熟悉的人我才比较愿意说话，看的比较顺眼和气场相符的才愿意深入交流，看到别人有“坏习惯”就会下意识地躲避。连面试我的几个面试官和hr都反映性格内向不善交流（不过也是事后和hr美女姐姐交流才知道的），哎，都是吃的老实的亏！&lt;br&gt;　　总的看来，自己在实验室做事不像开始那般不知所措，但是激情似乎也日益褪去了。因为在发现实验室这样一个没有什么绩效考核和物质激励的环境下归根到底是能者多劳，所以自己开始和稀泥，而且越和越熟练了。真不喜欢这样的自己，希望工作时能专注于自己喜欢的东西，主动、积极。&lt;br&gt;　　第二是找工作了，过程很是曲折，但结果还比较满意。一段痛苦的挣扎，一场突如其来的病症，不堪回首。不过在全方位了解了行业和公司发展之后觉得最终签的工作还挺满意，地点在上海也不错。&lt;br&gt;　　第三是写毕业论文，“赶在写论文之前将手里的todo做完”其实是“推迟写论文的时间”的另外一种说法，面对这么push的老板，我真是无力吐槽。好在论文需要的代码都已经完成，下面就是好好组织了，希望能顺利答辩，顺利毕业。&lt;/p&gt;
-&lt;p&gt;　　可能是因为快要离校的原因，最近思考了不少问题，除了像行李托运、上海租房这样琐碎的事情之外，觉得构建个人知识库是一件挺重要的事情。回首自己本科四年、研究生两年半，待到毕业之后到底和六年前的我有多大的不同？身高基本没变，体重轻了不少，记忆力衰退得厉害，精神没有从前集中了，谈了一场不靠谱的恋爱，没有存款。收获的是什么？一纸文凭和一张offer，要进入社会了。其他的呢？看了一百多本书，修了几十门课，可是现在傅里叶变换不会算了，电路图不会画了，方程组都不会解了。看了不少闲书，也做了些笔记和摘抄，但是装到脑袋里的东西还太少。&lt;br&gt;　　现在我觉得建立知识库（使用Evernote）是如此重要以至于我这两天都没写论文在想这个。而Evernote的好处在于云端同步、结构清晰、功能简单。具体方法是：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;收集自己感兴趣或者需要的知识&lt;/li&gt;
-&lt;li&gt;建立合适的树状结构将知识分类整理&lt;/li&gt;
-&lt;li&gt;定期整理和总结自己的知识库&lt;/li&gt;
-&lt;li&gt;随时记录自己的灵感和待办&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;　　要警惕：不把信息当作知识，不把收藏当作学习，不把阅读当作思考，不把储存当作掌握。&lt;/p&gt;
-&lt;p&gt;　　实验室要关门了，明天继续总结。&lt;/p&gt;
-&lt;p&gt;——————————————————2013分割线———————————————————&lt;/p&gt;
-&lt;p&gt;　　中午来到实验室，把Evernote的目录又重新设计了一下，准备下午把以前写的文档和读书笔记、下载的学习资料整理总结了放上去，希望2013能保持住这个习惯。&lt;/p&gt;
-&lt;p&gt;　　刚才翻读书笔记，找到那本当时感触颇深的《把时间当做朋友》，对比最近的生活状态，真是羞愧不已。&lt;br&gt;　　当时在本子上记下了几点：这个事情干不好不是因为你没有兴趣，没有兴趣却是因为没有干好；人作为动物的本能都是目光短浅的，这和订下什么三年计划五年计划是相悖的，越是短期的目标越清晰，越容易实现；拖延很多时候是完美主义作祟，不要总想着最后能做成什么样，立刻行动才是真理。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　现在是2012年12月31日22:09，离新的一年还有不到两个小时。回首去年：&lt;/p&gt;
-&lt;p&gt;　　那时的欣欣向荣还历历在目，豪言壮语也犹在耳边，但是最近这几个月实在是过的不能说好。&lt;/p&gt;
-&lt;p&gt;　　首先是实验室的工作，依然是遍地撒网，却没多少收获。今年自己的主要工作在
-    
-    </summary>
-    
-    
-      <category term="年终总结" scheme="http://qop.github.io/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   

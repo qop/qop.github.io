@@ -214,6 +214,285 @@
             
             
               
+                <a class="post-title-link" href="/2016/03/16/2016/03-16/" itemprop="url">
+                  jsbridge
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-03-16T00:00:00+08:00" content="2016-03-16">
+              2016-03-16
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2016/03/16/2016/03-16/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/03/16/2016/03-16/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <p>ing</p>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                <a class="post-title-link" href="/2016/03/10/2016/03-10/" itemprop="url">
+                  ci系统
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-03-10T00:00:00+08:00" content="2016-03-10">
+              2016-03-10
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2016/03/10/2016/03-10/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/03/10/2016/03-10/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <p>一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。</p>
+<ul>
+<li><p>读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。</p>
+<figure class="highlight ocaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">'echo</span> $<span class="type">PATH'</span>,</span><br><span class="line"><span class="symbol">'node</span> -v',</span><br><span class="line"><span class="symbol">'npm</span> -v',</span><br><span class="line"><span class="symbol">'npm</span> config get registry'</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>清空destination，此处可以由用户（此处用户指的是ci系统的用户，即业务开发）指定，如果不设置就读取默认配置，比如/dist文件夹。</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">rm</span> -rf dist</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>跑用户指定的构建脚本，gulp, grunt, webpack等各种方式，输出到/dist即可。这时候/dist里应该有<em>*/</em>.@(html|js|css|jpg|jpeg|png|gif)这些文件。</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"script"</span>: &#123;</span><br><span class="line">    <span class="string">"build"</span>: <span class="string">"gulp"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>文件名校验，文件名应该由小写字母、数字、分隔符、下划线和点组成。<code>/^[a-z0-9_\-\.\/]+$/</code></p>
+</li>
+<li><p>替换css中引用的相对路径，比如背景图，应该直接引用发到cdn上的静态文件地址。</p>
+</li>
+<li><p>压缩css。不多说了，推荐用clean-css。</p>
+</li>
+<li><p>压缩js。不多说，推荐用uglify-js。</p>
+</li>
+<li><p>压缩图片。图片推荐用imagemin，有针对jpg, jpeg, png, gif的工具。</p>
+</li>
+<li><p>给静态文件加md5。形如/dist/lib/zepto.min.js ==&gt; /dist/lib/zepto.min.md5.js</p>
+</li>
+<li><p>替换html中引用静态资源的相对路径。</p>
+</li>
+<li><p>上传ftp。</p>
+</li>
+<li><p>更新数据库版本号。</p>
+</li>
+</ul>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                <a class="post-title-link" href="/2016/02/23/2016/02-23/" itemprop="url">
+                  python爬虫(一)
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-02-23T00:00:00+08:00" content="2016-02-23">
+              2016-02-23
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2016/02/23/2016/02-23/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/02/23/2016/02-23/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <p>之前用python写过一些小工具，非常方便，但是没有系统学习过，所以想带着做一个简单爬虫的目的，系统地学习一下这个语言。<br>TODO</p>
+<p>——————————20160314 太忙了的分割线——————————</p>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 <a class="post-title-link" href="/2015/11/20/2015/11-20/" itemprop="url">
                   外卖整合沟通会
                 </a>
@@ -370,284 +649,6 @@
 
 
     
-      
-
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                <a class="post-title-link" href="/2015/06/23/2015/06-23/" itemprop="url">
-                  前端分享
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-06-23T00:00:00+08:00" content="2015-06-23">
-              2015-06-23
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2015/06/23/2015/06-23/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/06/23/2015/06-23/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <p>频度：每两周一次<br>时间：安排在每个迭代结束的周五下午，时长控制在1-2小时<br>流程：内容讲解，QA，开脑洞<br>形式：可以但不仅限于ppt、浏览器、ide<br>内容：新技术或者设计的学习分享（比如reactjs、angularjs、ES6中的新特性、html5和css3等），系统级分享（比如前端缓存方案、前端性能优化、cdn原理、bigpipe、前后端分离、gulpjs等前端工程化工具等），经验分享（jsbridge设计与实现，photoshop，灵活的html，比较大的前端项目的开发经验和踩过的坑），标准解读（js中经常被误解误用的一些概念）<br>主题及标准：每个人都可以提，随时更新主题，鼓励学习各种欣欣向荣的新技术，如果能转化到生产环境更好。<br>流程：主持人提前一个月联系分享人并确定分享内容，并负责订会议室买水果饮料（如果有经费- -）等后勤工作，分享人会前或者会后发出相关材料。<br>评价标准：NPS。</p>
-
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                <a class="post-title-link" href="/2015/03/16/2016/03-16/" itemprop="url">
-                  jsbridge
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-03-16T00:00:00+08:00" content="2015-03-16">
-              2015-03-16
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2015/03/16/2016/03-16/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/03/16/2016/03-16/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <p>ing</p>
-
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                <a class="post-title-link" href="/2015/03/10/2016/03-10/" itemprop="url">
-                  ci系统
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-03-10T00:00:00+08:00" content="2015-03-10">
-              2015-03-10
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2015/03/10/2016/03-10/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/03/10/2016/03-10/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <p>一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。</p>
-<ul>
-<li><p>读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。</p>
-<figure class="highlight ocaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">'echo</span> $<span class="type">PATH'</span>,</span><br><span class="line"><span class="symbol">'node</span> -v',</span><br><span class="line"><span class="symbol">'npm</span> -v',</span><br><span class="line"><span class="symbol">'npm</span> config get registry'</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>清空destination，此处可以由用户（此处用户指的是ci系统的用户，即业务开发）指定，如果不设置就读取默认配置，比如/dist文件夹。</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">rm</span> -rf dist</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>跑用户指定的构建脚本，gulp, grunt, webpack等各种方式，输出到/dist即可。这时候/dist里应该有<em>*/</em>.@(html|js|css|jpg|jpeg|png|gif)这些文件。</p>
-<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"script"</span>: &#123;</span><br><span class="line">    <span class="string">"build"</span>: <span class="string">"gulp"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>文件名校验，文件名应该由小写字母、数字、分隔符、下划线和点组成。<code>/^[a-z0-9_\-\.\/]+$/</code></p>
-</li>
-<li><p>替换css中引用的相对路径，比如背景图，应该直接引用发到cdn上的静态文件地址。</p>
-</li>
-<li><p>压缩css。不多说了，推荐用clean-css。</p>
-</li>
-<li><p>压缩js。不多说，推荐用uglify-js。</p>
-</li>
-<li><p>压缩图片。图片推荐用imagemin，有针对jpg, jpeg, png, gif的工具。</p>
-</li>
-<li><p>给静态文件加md5。形如/dist/lib/zepto.min.js ==&gt; /dist/lib/zepto.min.md5.js</p>
-</li>
-<li><p>替换html中引用静态资源的相对路径。</p>
-</li>
-<li><p>上传ftp。</p>
-</li>
-<li><p>更新数据库版本号。</p>
-</li>
-</ul>
-
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -690,7 +691,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">22</span>
+              <span class="site-state-item-count">23</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -704,7 +705,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">26</span>
+              <span class="site-state-item-count">27</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
