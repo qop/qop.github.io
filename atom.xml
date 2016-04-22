@@ -455,13 +455,13 @@
     <link href="http://qop.github.io/2015/10/28/2015/10-28/"/>
     <id>http://qop.github.io/2015/10/28/2015/10-28/</id>
     <published>2015-10-27T16:00:00.000Z</published>
-    <updated>2016-03-25T07:13:56.000Z</updated>
+    <updated>2016-04-22T03:37:02.000Z</updated>
     
     <content type="html">&lt;p&gt;最近招人经常需要面试，大概整理下面试的思路。&lt;/p&gt;
 &lt;h3 id=&quot;基础知识&quot;&gt;&lt;a href=&quot;#基础知识&quot; class=&quot;headerlink&quot; title=&quot;基础知识&quot;&gt;&lt;/a&gt;基础知识&lt;/h3&gt;&lt;p&gt;HTML&lt;br&gt;CSS&lt;br&gt;javascript&lt;br&gt;DOM &amp;amp; BOM基础知识&lt;/p&gt;
 &lt;h3 id=&quot;进阶知识&quot;&gt;&lt;a href=&quot;#进阶知识&quot; class=&quot;headerlink&quot; title=&quot;进阶知识&quot;&gt;&lt;/a&gt;进阶知识&lt;/h3&gt;&lt;p&gt;持续集成&lt;br&gt;前端工程化&lt;br&gt;渐进增强与平稳退化&lt;br&gt;操作系统-linux&lt;br&gt;git&lt;br&gt;浏览器&lt;br&gt;网络-HTTP&lt;br&gt;算法&lt;br&gt;设计模式&lt;br&gt;hybrid框架&lt;br&gt;移动端开发&lt;/p&gt;
 &lt;h3 id=&quot;前端新技术&quot;&gt;&lt;a href=&quot;#前端新技术&quot; class=&quot;headerlink&quot; title=&quot;前端新技术&quot;&gt;&lt;/a&gt;前端新技术&lt;/h3&gt;&lt;p&gt;ES6&lt;br&gt;angularJS&lt;br&gt;react&lt;/p&gt;
-&lt;p&gt;具体内容可参考：&lt;a href=&quot;!https://mdluo.github.io/blog/about-front-end-interview/&quot;&gt;关于前端面试&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;具体内容可参考：&lt;a href=&quot;https://mdluo.github.io/blog/about-front-end-interview/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;关于前端面试&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -473,6 +473,8 @@
     
     
       <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="面试" scheme="http://qop.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
