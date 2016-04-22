@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qop.github.io/"/>
-  <updated>2016-04-22T01:19:03.000Z</updated>
+  <updated>2016-04-22T01:27:40.000Z</updated>
   <id>http://qop.github.io/</id>
   
   <author>
@@ -20,15 +20,23 @@
     <link href="http://qop.github.io/2016/04/22/2016/2016-04-22/"/>
     <id>http://qop.github.io/2016/04/22/2016/2016-04-22/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-04-22T01:19:03.000Z</updated>
+    <updated>2016-04-22T01:27:40.000Z</updated>
     
-    <content type="html">&lt;p&gt;(TypeScript 和 ECMAScript 6 实践)[!xxx]&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;未来的前端&quot;&gt;&lt;a href=&quot;#未来的前端&quot; class=&quot;headerlink&quot; title=&quot;未来的前端&quot;&gt;&lt;/a&gt;&lt;a href=&quot;!http://2016.qconbeijing.com/track/2782&quot;&gt;未来的前端&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-3/&quot;&gt;青瓷引擎——打造 HTML5 游戏引擎开发工具之路&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-6/&quot;&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;(TypeScript 和 ECMAScript 6 实践)[!xxx]&lt;/p&gt;
-
+      &lt;h2 id=&quot;未来的前端&quot;&gt;&lt;a href=&quot;#未来的前端&quot; class=&quot;headerlink&quot; title=&quot;未来的前端&quot;&gt;&lt;/a&gt;&lt;a href=&quot;!http://2016.qconbeijing.com/track/2782&quot;&gt;未来的前端&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;l
     
     </summary>
     
@@ -40,15 +48,28 @@
   </entry>
   
   <entry>
-    <title>qcon 2016 - 互动娱乐时代下的 Web 音视频性能优化</title>
+    <title>互动娱乐时代下的 Web 音视频性能优化</title>
     <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-7/"/>
     <id>http://qop.github.io/2016/04/22/2016/2016-04-22-7/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-04-22T01:18:37.000Z</updated>
+    <updated>2016-04-22T01:28:59.000Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-3/&quot;&gt;青瓷引擎——打造 HTML5 游戏引擎开发工具之路&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-6/&quot;&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/li&gt;
+&lt;/ol&gt;
+</content>
     
     <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github
     
     </summary>
     
@@ -60,15 +81,28 @@
   </entry>
   
   <entry>
-    <title>qcon 2016 - 前后端联调方案探索与应用</title>
+    <title>前后端联调方案探索与应用</title>
     <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-5/"/>
     <id>http://qop.github.io/2016/04/22/2016/2016-04-22-5/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-04-22T01:18:24.000Z</updated>
+    <updated>2016-04-22T01:28:48.000Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-3/&quot;&gt;青瓷引擎——打造 HTML5 游戏引擎开发工具之路&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;前后端联调方案探索与应用&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-6/&quot;&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
     
     <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github
     
     </summary>
     
@@ -82,15 +116,28 @@
   </entry>
   
   <entry>
-    <title>qcon 2016 - 如何看待 left-pad 事件</title>
+    <title>如何看待 left-pad 事件</title>
     <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-4/"/>
     <id>http://qop.github.io/2016/04/22/2016/2016-04-22-4/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-04-22T01:18:21.000Z</updated>
+    <updated>2016-04-22T01:28:41.000Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-3/&quot;&gt;青瓷引擎——打造 HTML5 游戏引擎开发工具之路&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;如何看待 left-pad 事件&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-6/&quot;&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
     
     <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github
     
     </summary>
     
@@ -102,15 +149,28 @@
   </entry>
   
   <entry>
-    <title>qcon 2016 - 青瓷引擎——打造 HTML5 游戏引擎开发工具之路</title>
+    <title>青瓷引擎——打造 HTML5 游戏引擎开发工具之路</title>
     <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-3/"/>
     <id>http://qop.github.io/2016/04/22/2016/2016-04-22-3/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-04-22T01:18:19.000Z</updated>
+    <updated>2016-04-22T01:28:22.000Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;青瓷引擎——打造 HTML5 游戏引擎开发工具之路&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-6/&quot;&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
     
     <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github
     
     </summary>
     
@@ -122,15 +182,28 @@
   </entry>
   
   <entry>
-    <title>qcon 2016 - React 和 Ant Design 在蚂蚁金服的实践</title>
+    <title>React 和 Ant Design 在蚂蚁金服的实践</title>
     <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-2/"/>
     <id>http://qop.github.io/2016/04/22/2016/2016-04-22-2/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-04-22T01:14:11.000Z</updated>
+    <updated>2016-04-22T01:27:53.000Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[React 和 Ant Design 在蚂蚁金服的实践]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-3/&quot;&gt;青瓷引擎——打造 HTML5 游戏引擎开发工具之路&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-6/&quot;&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
     
     <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[React 和 Ant Design 在蚂蚁金服的实
     
     </summary>
     
@@ -144,15 +217,28 @@
   </entry>
   
   <entry>
-    <title>qcon 2016 - TypeScript 和 ECMAScript 6 实践</title>
+    <title>TypeScript 和 ECMAScript 6 实践</title>
     <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-1/"/>
     <id>http://qop.github.io/2016/04/22/2016/2016-04-22-1/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-04-22T01:13:48.000Z</updated>
+    <updated>2016-04-22T01:28:30.000Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;TypeScript 和 ECMAScript 6 实践&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-3/&quot;&gt;青瓷引擎——打造 HTML5 游戏引擎开发工具之路&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-6/&quot;&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
     
     <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;TypeScript 和 ECMAScript 6 实践&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;
     
     </summary>
     
@@ -172,15 +258,28 @@
   </entry>
   
   <entry>
-    <title>qcon 2016 - 向未来兼容——ES2015+/TypeScript 开发 Node.js 项目</title>
+    <title>向未来兼容——ES2015+/TypeScript 开发 Node.js 项目</title>
     <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-6/"/>
     <id>http://qop.github.io/2016/04/22/2016/2016-04-22-6/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-04-22T01:18:33.000Z</updated>
+    <updated>2016-04-22T01:28:54.000Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-3/&quot;&gt;青瓷引擎——打造 HTML5 游戏引擎开发工具之路&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
     
     <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;!http://qop.github
     
     </summary>
     
