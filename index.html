@@ -214,8 +214,8 @@
             
             
               
-                <a class="post-title-link" href="/2016/03/16/2016/2016-03-16/" itemprop="url">
-                  jsbridge
+                <a class="post-title-link" href="/2016/04/22/2016/2016-04-22/" itemprop="url">
+                  qcon 2016 未来的前端
                 </a>
               
             
@@ -225,8 +225,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-03-16T00:00:00+08:00" content="2016-03-16">
-              2016-03-16
+            <time itemprop="dateCreated" datetime="2016-04-22T00:00:00+08:00" content="2016-04-22">
+              2016-04-22
             </time>
           </span>
 
@@ -236,8 +236,8 @@
             
               <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2016/03/16/2016/2016-03-16/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/03/16/2016/2016-03-16/" itemprop="commentsCount"></span>
+              <a href="/2016/04/22/2016/2016-04-22/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/22/2016/2016-04-22/" itemprop="commentsCount"></span>
               </a>
             </span>
             
@@ -259,7 +259,7 @@
         
           <span itemprop="articleBody">
             
-              <p>ing</p>
+              <p>(TypeScript 和 ECMAScript 6 实践)[!xxx]</p>
 
             
           </span>
@@ -297,8 +297,8 @@
             
             
               
-                <a class="post-title-link" href="/2016/03/10/2016/2016-03-10/" itemprop="url">
-                  ci系统
+                <a class="post-title-link" href="/2016/04/22/2016/2016-04-22-7/" itemprop="url">
+                  qcon 2016 - 互动娱乐时代下的 Web 音视频性能优化
                 </a>
               
             
@@ -308,8 +308,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-03-10T00:00:00+08:00" content="2016-03-10">
-              2016-03-10
+            <time itemprop="dateCreated" datetime="2016-04-22T00:00:00+08:00" content="2016-04-22">
+              2016-04-22
             </time>
           </span>
 
@@ -319,8 +319,8 @@
             
               <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2016/03/10/2016/2016-03-10/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/03/10/2016/2016-03-10/" itemprop="commentsCount"></span>
+              <a href="/2016/04/22/2016/2016-04-22-7/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/22/2016/2016-04-22-7/" itemprop="commentsCount"></span>
               </a>
             </span>
             
@@ -342,37 +342,7 @@
         
           <span itemprop="articleBody">
             
-              <p>一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。</p>
-<ul>
-<li><p>读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。</p>
-<figure class="highlight ocaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">'echo</span> $<span class="type">PATH'</span>,</span><br><span class="line"><span class="symbol">'node</span> -v',</span><br><span class="line"><span class="symbol">'npm</span> -v',</span><br><span class="line"><span class="symbol">'npm</span> config get registry'</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>清空destination，此处可以由用户（此处用户指的是ci系统的用户，即业务开发）指定，如果不设置就读取默认配置，比如/dist文件夹。</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">rm</span> -rf dist</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>跑用户指定的构建脚本，gulp, grunt, webpack等各种方式，输出到/dist即可。这时候/dist里应该有<em>*/</em>.@(html|js|css|jpg|jpeg|png|gif)这些文件。</p>
-<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"script"</span>: &#123;</span><br><span class="line">    <span class="string">"build"</span>: <span class="string">"gulp"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>文件名校验，文件名应该由小写字母、数字、分隔符、下划线和点组成。<code>/^[a-z0-9_\-\.\/]+$/</code></p>
-</li>
-<li><p>替换css中引用的相对路径，比如背景图，应该直接引用发到cdn上的静态文件地址。</p>
-</li>
-<li><p>压缩css。不多说了，推荐用clean-css。</p>
-</li>
-<li><p>压缩js。不多说，推荐用uglify-js。</p>
-</li>
-<li><p>压缩图片。图片推荐用imagemin，有针对jpg, jpeg, png, gif的工具。</p>
-</li>
-<li><p>给静态文件加md5。形如/dist/lib/zepto.min.js ==&gt; /dist/lib/zepto.min.md5.js</p>
-</li>
-<li><p>替换html中引用静态资源的相对路径。</p>
-</li>
-<li><p>上传ftp。</p>
-</li>
-<li><p>更新数据库版本号。</p>
-</li>
-</ul>
-
+              
             
           </span>
         
@@ -409,8 +379,8 @@
             
             
               
-                <a class="post-title-link" href="/2016/02/23/2016/2016-02-23/" itemprop="url">
-                  python爬虫(一)
+                <a class="post-title-link" href="/2016/04/22/2016/2016-04-22-5/" itemprop="url">
+                  qcon 2016 - 前后端联调方案探索与应用
                 </a>
               
             
@@ -420,8 +390,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-02-23T00:00:00+08:00" content="2016-02-23">
-              2016-02-23
+            <time itemprop="dateCreated" datetime="2016-04-22T00:00:00+08:00" content="2016-04-22">
+              2016-04-22
             </time>
           </span>
 
@@ -431,8 +401,8 @@
             
               <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2016/02/23/2016/2016-02-23/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/02/23/2016/2016-02-23/" itemprop="commentsCount"></span>
+              <a href="/2016/04/22/2016/2016-04-22-5/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/22/2016/2016-04-22-5/" itemprop="commentsCount"></span>
               </a>
             </span>
             
@@ -454,9 +424,7 @@
         
           <span itemprop="articleBody">
             
-              <p>之前用python写过一些小工具，非常方便，但是没有系统学习过，所以想带着做一个简单爬虫的目的，系统地学习一下这个语言。<br>TODO</p>
-<p>——————————20160314 太忙了的分割线——————————</p>
-
+              
             
           </span>
         
@@ -493,8 +461,8 @@
             
             
               
-                <a class="post-title-link" href="/2015/11/20/2015/11-20/" itemprop="url">
-                  外卖整合沟通会
+                <a class="post-title-link" href="/2016/04/22/2016/2016-04-22-4/" itemprop="url">
+                  qcon 2016 - 如何看待 left-pad 事件
                 </a>
               
             
@@ -504,8 +472,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-11-20T00:00:00+08:00" content="2015-11-20">
-              2015-11-20
+            <time itemprop="dateCreated" datetime="2016-04-22T00:00:00+08:00" content="2016-04-22">
+              2016-04-22
             </time>
           </span>
 
@@ -515,8 +483,8 @@
             
               <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2015/11/20/2015/11-20/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/11/20/2015/11-20/" itemprop="commentsCount"></span>
+              <a href="/2016/04/22/2016/2016-04-22-4/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/22/2016/2016-04-22-4/" itemprop="commentsCount"></span>
               </a>
             </span>
             
@@ -538,10 +506,7 @@
         
           <span itemprop="articleBody">
             
-              <h2 id="中美零售业互联网化对比"><a href="#中美零售业互联网化对比" class="headerlink" title="中美零售业互联网化对比"></a>中美零售业互联网化对比</h2><p>前十的电商公司，美国只有3家是新兴互联网公司，amazon, ebay, apple，美国的电商市场份额差距不大。<br>中国更符合互联网的721定律。</p>
-<h2 id="互联网到来时传统零售业对比。"><a href="#互联网到来时传统零售业对比。" class="headerlink" title="互联网到来时传统零售业对比。"></a>互联网到来时传统零售业对比。</h2><p>中国央视打广告去二三线城市开店就能赚钱。<br>美国公司的增长点基本来自全球化或者国家经历形式走强。</p>
-<h2 id="外卖业务在中美环境下的差异性"><a href="#外卖业务在中美环境下的差异性" class="headerlink" title="外卖业务在中美环境下的差异性"></a>外卖业务在中美环境下的差异性</h2><p>人口密度，人力成本，商家sku，人口数量。</p>
-
+              
             
           </span>
         
@@ -578,8 +543,8 @@
             
             
               
-                <a class="post-title-link" href="/2015/10/28/2015/10-28/" itemprop="url">
-                  面试
+                <a class="post-title-link" href="/2016/04/22/2016/2016-04-22-3/" itemprop="url">
+                  qcon 2016 - 青瓷引擎——打造 HTML5 游戏引擎开发工具之路
                 </a>
               
             
@@ -589,8 +554,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-10-28T00:00:00+08:00" content="2015-10-28">
-              2015-10-28
+            <time itemprop="dateCreated" datetime="2016-04-22T00:00:00+08:00" content="2016-04-22">
+              2016-04-22
             </time>
           </span>
 
@@ -600,8 +565,8 @@
             
               <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2015/10/28/2015/10-28/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/10/28/2015/10-28/" itemprop="commentsCount"></span>
+              <a href="/2016/04/22/2016/2016-04-22-3/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/22/2016/2016-04-22-3/" itemprop="commentsCount"></span>
               </a>
             </span>
             
@@ -623,12 +588,7 @@
         
           <span itemprop="articleBody">
             
-              <p>最近招人经常需要面试，大概整理下面试的思路。</p>
-<h3 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h3><p>HTML<br>CSS<br>javascript<br>DOM &amp; BOM基础知识</p>
-<h3 id="进阶知识"><a href="#进阶知识" class="headerlink" title="进阶知识"></a>进阶知识</h3><p>持续集成<br>前端工程化<br>渐进增强与平稳退化<br>操作系统-linux<br>git<br>浏览器<br>网络-HTTP<br>算法<br>设计模式<br>hybrid框架<br>移动端开发</p>
-<h3 id="前端新技术"><a href="#前端新技术" class="headerlink" title="前端新技术"></a>前端新技术</h3><p>ES6<br>angularJS<br>react</p>
-<p>具体内容可参考：<a href="!https://mdluo.github.io/blog/about-front-end-interview/">关于前端面试</a></p>
-
+              
             
           </span>
         
@@ -653,7 +613,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -691,7 +651,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">32</span>
+              <span class="site-state-item-count">41</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -705,7 +665,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">33</span>
+              <span class="site-state-item-count">43</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
