@@ -214,6 +214,99 @@
             
             
               
+                <a class="post-title-link" href="/2016/05/02/2016/2016-05-02/" itemprop="url">
+                  react 使用的一些问题
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-05-02T00:00:00+08:00" content="2016-05-02">
+              2016-05-02
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2016/05/02/2016/2016-05-02/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/05/02/2016/2016-05-02/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <ol>
+<li><p>三元表达式不够灵活，比如判断状态切换显示隐藏，可能要这么写：</p>
+<figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">className=&#123;this.<span class="keyword">state</span>.panelShow ? <span class="string">"datatime-panel"</span> : <span class="string">"datatime-panel hide"</span>&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。</p>
+</li>
+<li>传入参数的完备性不好校验，校验失败的逻辑不好处理。</li>
+<li>如果组件比较复杂，state可能会比较复杂不好维护，如果拆成小组件，他们的组合又是挑战。</li>
+<li>如果要将子组件的数据传递给父组件，需要把父组件的一个函数作为回调传给子组件。</li>
+<li>组件之间的调用，以及交互处理没有完美的解决方案。</li>
+</ol>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 <a class="post-title-link" href="/2016/04/22/2016/2016-04-22/" itemprop="url">
                   qcon 2016 未来的前端
                 </a>
@@ -305,8 +398,8 @@
             
             
               
-                <a class="post-title-link" href="/2016/04/22/2016/2016-04-22-7/" itemprop="url">
-                  互动娱乐时代下的 Web 音视频性能优化
+                <a class="post-title-link" href="/2016/04/22/2016/2016-04-22-6/" itemprop="url">
+                  向未来兼容——ES2015+/TypeScript 开发 Node.js 项目
                 </a>
               
             
@@ -327,8 +420,8 @@
             
               <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2016/04/22/2016/2016-04-22-7/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/22/2016/2016-04-22-7/" itemprop="commentsCount"></span>
+              <a href="/2016/04/22/2016/2016-04-22-6/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/22/2016/2016-04-22-6/" itemprop="commentsCount"></span>
               </a>
             </span>
             
@@ -356,8 +449,8 @@
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-3/">青瓷引擎——打造 HTML5 游戏引擎开发工具之路</a></li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-4/">如何看待 left-pad 事件</a></li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-5/">前后端联调方案探索与应用</a></li>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-6/">向未来兼容——ES2015+/TypeScript 开发 Node.js 项目</a></li>
-<li>互动娱乐时代下的 Web 音视频性能优化</li>
+<li>向未来兼容——ES2015+/TypeScript 开发 Node.js 项目</li>
+<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-7/">互动娱乐时代下的 Web 音视频性能优化</a></li>
 </ol>
 
             
@@ -562,97 +655,6 @@
 
 
     
-      
-
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                <a class="post-title-link" href="/2016/04/22/2016/2016-04-22-3/" itemprop="url">
-                  青瓷引擎——打造 HTML5 游戏引擎开发工具之路
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2016-04-22T00:00:00+08:00" content="2016-04-22">
-              2016-04-22
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-              &nbsp; | &nbsp;
-              <a href="/2016/04/22/2016/2016-04-22-3/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/22/2016/2016-04-22-3/" itemprop="commentsCount"></span>
-              </a>
-            </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <ol>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-1/">TypeScript 和 ECMAScript 6 实践</a></li>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-2/">React 和 Ant Design 在蚂蚁金服的实践</a></li>
-<li>青瓷引擎——打造 HTML5 游戏引擎开发工具之路</li>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-4/">如何看待 left-pad 事件</a></li>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-5/">前后端联调方案探索与应用</a></li>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-6/">向未来兼容——ES2015+/TypeScript 开发 Node.js 项目</a></li>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-7/">互动娱乐时代下的 Web 音视频性能优化</a></li>
-</ol>
-
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -695,7 +697,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">41</span>
+              <span class="site-state-item-count">42</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

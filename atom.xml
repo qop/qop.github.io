@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qop.github.io/"/>
-  <updated>2016-04-22T03:39:56.000Z</updated>
+  <updated>2016-05-02T14:56:26.000Z</updated>
   <id>http://qop.github.io/</id>
   
   <author>
@@ -14,6 +14,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>react 使用的一些问题</title>
+    <link href="http://qop.github.io/2016/05/02/2016/2016-05-02/"/>
+    <id>http://qop.github.io/2016/05/02/2016/2016-05-02/</id>
+    <published>2016-05-01T16:00:00.000Z</published>
+    <updated>2016-05-02T14:56:26.000Z</updated>
+    
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;三元表达式不够灵活，比如判断状态切换显示隐藏，可能要这么写：&lt;/p&gt;
+&lt;figure class=&quot;highlight pf&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;className=&amp;#123;this.&lt;span class=&quot;keyword&quot;&gt;state&lt;/span&gt;.panelShow ? &lt;span class=&quot;string&quot;&gt;&quot;datatime-panel&quot;&lt;/span&gt; : &lt;span class=&quot;string&quot;&gt;&quot;datatime-panel hide&quot;&lt;/span&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;传入参数的完备性不好校验，校验失败的逻辑不好处理。&lt;/li&gt;
+&lt;li&gt;如果组件比较复杂，state可能会比较复杂不好维护，如果拆成小组件，他们的组合又是挑战。&lt;/li&gt;
+&lt;li&gt;如果要将子组件的数据传递给父组件，需要把父组件的一个函数作为回调传给子组件。&lt;/li&gt;
+&lt;li&gt;组件之间的调用，以及交互处理没有完美的解决方案。&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;三元表达式不够灵活，比如判断状态切换显示隐藏，可能要这么写：&lt;/p&gt;
+&lt;figure class=&quot;highlight pf&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;b
+    
+    </summary>
+    
+    
+      <category term="react" scheme="http://qop.github.io/tags/react/"/>
+    
+      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>qcon 2016 未来的前端</title>
@@ -48,11 +83,11 @@
   </entry>
   
   <entry>
-    <title>互动娱乐时代下的 Web 音视频性能优化</title>
-    <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-7/"/>
-    <id>http://qop.github.io/2016/04/22/2016/2016-04-22-7/</id>
+    <title>向未来兼容——ES2015+/TypeScript 开发 Node.js 项目</title>
+    <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-6/"/>
+    <id>http://qop.github.io/2016/04/22/2016/2016-04-22-6/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-04-22T03:39:52.000Z</updated>
+    <updated>2016-04-22T03:39:53.000Z</updated>
     
     <content type="html">&lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
@@ -60,8 +95,8 @@
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-3/&quot;&gt;青瓷引擎——打造 HTML5 游戏引擎开发工具之路&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-6/&quot;&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/li&gt;
+&lt;li&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
     
@@ -74,7 +109,17 @@
     </summary>
     
     
+      <category term="es2015" scheme="http://qop.github.io/tags/es2015/"/>
+    
+      <category term="es6" scheme="http://qop.github.io/tags/es6/"/>
+    
+      <category term="node" scheme="http://qop.github.io/tags/node/"/>
+    
       <category term="qcon" scheme="http://qop.github.io/tags/qcon/"/>
+    
+      <category term="ts" scheme="http://qop.github.io/tags/ts/"/>
+    
+      <category term="typescript" scheme="http://qop.github.io/tags/typescript/"/>
     
       <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
@@ -258,11 +303,11 @@
   </entry>
   
   <entry>
-    <title>向未来兼容——ES2015+/TypeScript 开发 Node.js 项目</title>
-    <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-6/"/>
-    <id>http://qop.github.io/2016/04/22/2016/2016-04-22-6/</id>
+    <title>互动娱乐时代下的 Web 音视频性能优化</title>
+    <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-7/"/>
+    <id>http://qop.github.io/2016/04/22/2016/2016-04-22-7/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-04-22T03:39:53.000Z</updated>
+    <updated>2016-04-22T03:39:52.000Z</updated>
     
     <content type="html">&lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
@@ -270,8 +315,8 @@
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-3/&quot;&gt;青瓷引擎——打造 HTML5 游戏引擎开发工具之路&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-6/&quot;&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/li&gt;
 &lt;/ol&gt;
 </content>
     
@@ -284,17 +329,7 @@
     </summary>
     
     
-      <category term="es2015" scheme="http://qop.github.io/tags/es2015/"/>
-    
-      <category term="es6" scheme="http://qop.github.io/tags/es6/"/>
-    
-      <category term="node" scheme="http://qop.github.io/tags/node/"/>
-    
       <category term="qcon" scheme="http://qop.github.io/tags/qcon/"/>
-    
-      <category term="ts" scheme="http://qop.github.io/tags/ts/"/>
-    
-      <category term="typescript" scheme="http://qop.github.io/tags/typescript/"/>
     
       <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
@@ -639,29 +674,6 @@
     
     
       <category term="阶层" scheme="http://qop.github.io/tags/%E9%98%B6%E5%B1%82/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Best Practices for Speeding Up Your Web Site</title>
-    <link href="http://qop.github.io/2014/07/26/2014/07-26/"/>
-    <id>http://qop.github.io/2014/07/26/2014/07-26/</id>
-    <published>2014-07-25T16:00:00.000Z</published>
-    <updated>2016-03-25T07:25:30.000Z</updated>
-    
-    <content type="html">&lt;p&gt;Make Fewer HTTP Requests&lt;br&gt;Use a Content Delivery Network&lt;br&gt;Add an Expires or a Cache-Control Header&lt;br&gt;Gzip Components&lt;br&gt;Put Stylesheets at the Top&lt;br&gt;Put Scripts at the Bottom&lt;br&gt;Avoid CSS Expressions&lt;br&gt;Make JavaScript and CSS External&lt;br&gt;Reduce DNS Lookups&lt;br&gt;Minify JavaScript and CSS&lt;br&gt;Avoid Redirects&lt;br&gt;Remove Duplicate Scripts&lt;br&gt;Configure ETags&lt;br&gt;Make Ajax Cacheable&lt;br&gt;Flush the Buffer Early&lt;br&gt;Use GET for AJAX Requests&lt;br&gt;Post-load Components&lt;br&gt;Preload Components&lt;br&gt;Reduce the Number of DOM Elements&lt;br&gt;Split Components Across Domains&lt;br&gt;Minimize the Number of iframes&lt;br&gt;No 404s&lt;br&gt;Reduce Cookie Size&lt;br&gt;Use Cookie-free Domains for Components&lt;br&gt;Minimize DOM Access&lt;br&gt;Develop Smart Event Handlers&lt;br&gt;Choose &lt;link&gt; over @import&lt;br&gt;Avoid Filters&lt;br&gt;Optimize Images&lt;br&gt;Optimize CSS Sprites&lt;br&gt;Don’ t Scale Images in HTML&lt;br&gt;Make favicon.ico Small and Cacheable&lt;br&gt;Keep Components under 25K&lt;br&gt;Pack Components into a Multipart Document&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Make Fewer HTTP Requests&lt;br&gt;Use a Content Delivery Network&lt;br&gt;Add an Expires or a Cache-Control Header&lt;br&gt;Gzip Components&lt;br&gt;Put Styleshe
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="转载" scheme="http://qop.github.io/tags/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
