@@ -50,10 +50,9 @@
 <meta name="description" content="三元表达式不够灵活，比如判断状态切换显示隐藏，可能要这么写：
 1className=&amp;#123;this.state.panelShow ? &quot;datatime-panel&quot; : &quot;datatime-panel hide&quot;&amp;#125;
 
-用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。
+用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。——拆分state不合理
 
-传入参数的完备性不好校验，校验失败的逻辑不好处理。
-如果组件比较复杂，sta">
+传入参数的完备性不好校验，校验失败的逻辑不好处理。—">
 <meta property="og:type" content="article">
 <meta property="og:title" content="react 使用的一些问题">
 <meta property="og:url" content="http://qop.github.io/2016/05/02/2016/2016-05-02/index.html">
@@ -61,20 +60,18 @@
 <meta property="og:description" content="三元表达式不够灵活，比如判断状态切换显示隐藏，可能要这么写：
 1className=&amp;#123;this.state.panelShow ? &quot;datatime-panel&quot; : &quot;datatime-panel hide&quot;&amp;#125;
 
-用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。
+用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。——拆分state不合理
 
-传入参数的完备性不好校验，校验失败的逻辑不好处理。
-如果组件比较复杂，sta">
-<meta property="og:updated_time" content="2016-05-02T14:56:26.000Z">
+传入参数的完备性不好校验，校验失败的逻辑不好处理。—">
+<meta property="og:updated_time" content="2016-05-05T08:18:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react 使用的一些问题">
 <meta name="twitter:description" content="三元表达式不够灵活，比如判断状态切换显示隐藏，可能要这么写：
 1className=&amp;#123;this.state.panelShow ? &quot;datatime-panel&quot; : &quot;datatime-panel hide&quot;&amp;#125;
 
-用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。
+用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。——拆分state不合理
 
-传入参数的完备性不好校验，校验失败的逻辑不好处理。
-如果组件比较复杂，sta">
+传入参数的完备性不好校验，校验失败的逻辑不好处理。—">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -275,11 +272,11 @@
 <li><p>三元表达式不够灵活，比如判断状态切换显示隐藏，可能要这么写：</p>
 <figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">className=&#123;this.<span class="keyword">state</span>.panelShow ? <span class="string">"datatime-panel"</span> : <span class="string">"datatime-panel hide"</span>&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。</p>
+<li><p>用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。——拆分state不合理</p>
 </li>
-<li>传入参数的完备性不好校验，校验失败的逻辑不好处理。</li>
-<li>如果组件比较复杂，state可能会比较复杂不好维护，如果拆成小组件，他们的组合又是挑战。</li>
-<li>如果要将子组件的数据传递给父组件，需要把父组件的一个函数作为回调传给子组件。</li>
+<li>传入参数的完备性不好校验，校验失败的逻辑不好处理。——设计state有难度</li>
+<li>如果组件比较复杂，state可能会比较复杂不好维护，如果拆成小组件，他们的组合又是挑战。——redux</li>
+<li>如果要将子组件的数据传递给父组件，需要把父组件的一个函数作为回调传给子组件。——子组件给父组件只有这么办了</li>
 <li>组件之间的调用，以及交互处理没有完美的解决方案。</li>
 </ol>
 </span>

@@ -263,11 +263,11 @@
 <li><p>三元表达式不够灵活，比如判断状态切换显示隐藏，可能要这么写：</p>
 <figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">className=&#123;this.<span class="keyword">state</span>.panelShow ? <span class="string">"datatime-panel"</span> : <span class="string">"datatime-panel hide"</span>&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。</p>
+<li><p>用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。——拆分state不合理</p>
 </li>
-<li>传入参数的完备性不好校验，校验失败的逻辑不好处理。</li>
-<li>如果组件比较复杂，state可能会比较复杂不好维护，如果拆成小组件，他们的组合又是挑战。</li>
-<li>如果要将子组件的数据传递给父组件，需要把父组件的一个函数作为回调传给子组件。</li>
+<li>传入参数的完备性不好校验，校验失败的逻辑不好处理。——设计state有难度</li>
+<li>如果组件比较复杂，state可能会比较复杂不好维护，如果拆成小组件，他们的组合又是挑战。——redux</li>
+<li>如果要将子组件的数据传递给父组件，需要把父组件的一个函数作为回调传给子组件。——子组件给父组件只有这么办了</li>
 <li>组件之间的调用，以及交互处理没有完美的解决方案。</li>
 </ol>
 
@@ -352,7 +352,9 @@
         
           <span itemprop="articleBody">
             
-              <h2 id="未来的前端"><a href="#未来的前端" class="headerlink" title="未来的前端"></a><a href="!http://2016.qconbeijing.com/track/2782">未来的前端</a></h2><ol>
+              <h2 id="未来的前端专题简介"><a href="#未来的前端专题简介" class="headerlink" title="未来的前端专题简介"></a><a href="!http://2016.qconbeijing.com/track/2782">未来的前端专题简介</a></h2><p>2016 QCon beijing 前端专场，除了隔壁的移动开发挑战专场分享了阿里的Weex和携程的ReactMix几乎所有的前端主题都在这里了。<br>本届 QCon 的前端专场主要是在讨论前端技术未来的发展趋势，主题主要有两方面：一是讨论新的规范和标准（ECMAScript 6, TypeScript, React等），二是分享一些成熟的前端解决方案。</p>
+<hr>
+<ol>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-1/">TypeScript 和 ECMAScript 6 实践</a></li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-2/">React 和 Ant Design 在蚂蚁金服的实践</a></li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-3/">青瓷引擎——打造 HTML5 游戏引擎开发工具之路</a></li>
@@ -443,7 +445,17 @@
         
           <span itemprop="articleBody">
             
-              <ol>
+              <p>ES2015特性，stage 3 &amp; 4，未来特性，async/await, decorators<br>没有runtime支持如何使用这些特性？babel<br>编译引入的问题：</p>
+<ol>
+<li>编译慢的问题——升级到npm3</li>
+<li>性能问题</li>
+<li>使用es2015-loose，性能更高(部分6x)；</li>
+<li>使用bluebird替代promise(3x)；<a href="https://github.com/petkaantonov/bluebird/wiki/Optimization-killers" target="_blank" rel="external">https://github.com/petkaantonov/bluebird/wiki/Optimization-killers</a></li>
+<li>如何实时编译——babel –watch</li>
+<li>报错信息定位到源代码<br>babel –retain-lines（定位不准）<br>babel –sourceMap<br>借助 source-map-support 模块</li>
+</ol>
+<p>断点调试<br>    借助 SourceMap，node-inspector、WebStorm、VS Code 等都支持借助 SourceMap 来断点调试源代码<br>    编译出错后如何快速提示——命令行编译错误信息显示在控制台→调用接口编译将错误信息打印到页面。<br>typescript<br>    先tsc，在babel（为啥？不记得了）<br>    两次编译生成SourceMap导致报错信息定位不准，solution</p>
+<ol>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-1/">TypeScript 和 ECMAScript 6 实践</a></li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-2/">React 和 Ant Design 在蚂蚁金服的实践</a></li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-3/">青瓷引擎——打造 HTML5 游戏引擎开发工具之路</a></li>
@@ -534,7 +546,9 @@
         
           <span itemprop="articleBody">
             
-              <ol>
+              <p>前后端联调的进化<br>广义的前端：浏览器，iOS/android，SSO，业务后台，存储服务<br>现有工具对比：<br><img src="/images/2016-04-qcon-联调.jpg" alt="qcon-联调"><br>API定义中心化——定义一次API而可以处处复用，生成API mock，API单元测试，API文档，流程约束。<br>两种mock方案：请求代理 vs 客户端接入</p>
+<p>如何确保API的可用性？——将API测试过程加入到ci流程，保证去掉mock后前端能无缝对接上后端。<br>共享API的定义：通过定义生成文档——如何编写API: markdown超集？做了语法检查，如果不合法，在右侧预览区域显示（好像不够健壮？）<br>流程控制：API变更递归通知，项目成员可以approve和reject。（需要生成API依赖树：API1→服务A→服务B）<br>其他：<br>有状态的API由多个case定义，选其中一个组成scenario<br>API线上检测-ongoing<br>服务调用RPC(vs http)化-ongoing</p>
+<ol>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-1/">TypeScript 和 ECMAScript 6 实践</a></li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-2/">React 和 Ant Design 在蚂蚁金服的实践</a></li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-3/">青瓷引擎——打造 HTML5 游戏引擎开发工具之路</a></li>
@@ -625,7 +639,29 @@
         
           <span itemprop="articleBody">
             
-              <ol>
+              <p>关于贺师俊：</p>
+<ul>
+<li>JavaScript: The World’s Best Programming Language</li>
+<li>程序员的圣战：tab vs space</li>
+</ul>
+<p>事件回顾：azer? kik公司？npm 公司？</p>
+<p>各种行为艺术：</p>
+<ul>
+<li><a href="http://left-pad.io/" target="_blank" rel="external">http://left-pad.io/</a></li>
+<li><a href="http://fivejs.lol/" target="_blank" rel="external">http://fivejs.lol/</a> </li>
+<li><a href="https://github.com/jezen/is-thirteen" target="_blank" rel="external">https://github.com/jezen/is-thirteen</a></li>
+</ul>
+<p>包是不是应该有命名空间？<a href="https://github.com/npm/npm/issues/798" target="_blank" rel="external">https://github.com/npm/npm/issues/798</a></p>
+<p>小模块是好是坏？<a href="https://github.com/sindresorhus/ama/issues/10（关键不在行数，而在于抽象）" target="_blank" rel="external">https://github.com/sindresorhus/ama/issues/10（关键不在行数，而在于抽象）</a></p>
+<p>我们是不是早已忘记该如何好好地编程？<a href="https://zhuanlan.zhihu.com/p/20707235" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/20707235</a><br>第三方依赖是好是坏？</p>
+<ul>
+<li>依赖太多太深，安装蛮</li>
+<li>依赖链太深，安全隐患</li>
+<li>依赖太复杂，升级困难</li>
+</ul>
+<p>是不是应该使用 shrinkwrap/lock（锁定依赖）<br>是不是应该使用 bundle/pack（打包依赖）<br>是不是应该自建仓库？<br>it depends</p>
+<p>论left-pad的实现——性能优化应该针对具体的 case</p>
+<ol>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-1/">TypeScript 和 ECMAScript 6 实践</a></li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-2/">React 和 Ant Design 在蚂蚁金服的实践</a></li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-3/">青瓷引擎——打造 HTML5 游戏引擎开发工具之路</a></li>
