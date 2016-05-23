@@ -36,7 +36,7 @@
 
 
 
-  <meta name="keywords" content="es2015,es6,qcon,ts,typescript,前端," />
+  <meta name="keywords" content="qcon,前后端分离,前端," />
 
 
 
@@ -47,22 +47,20 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="为了解决 js 语法上的一些局限，业界出现了coffeescript dart ts es6等，而现在 es6 和 ts 已经很成熟了。
-然后讲了 ts 是什么。ts最重要的几个特性：是js的超集，而非重新发明(not re-inverting but improve)，包含大部分 es6 的特性，可以被编译成 es5 / es6.
-再讲了一些 es6 的特性： Array/Object/Prom">
+<meta name="description" content="前后端联调的进化广义的前端：浏览器，iOS/android，SSO，业务后台，存储服务现有工具对比：API定义中心化——定义一次API而可以处处复用，生成API mock，API单元测试，API文档，流程约束。两种mock方案：请求代理 vs 客户端接入
+如何确保API的可用性？——将API测试过程加入到ci流程，保证去掉mock后前端能无缝对接上后端。共享API的定义：通过定义生成文档——如何编">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TypeScript 和 ECMAScript 6 实践">
-<meta property="og:url" content="http://qop.github.io/2016/04/22/2016/2016-04-22-1/index.html">
+<meta property="og:title" content="前后端联调方案探索与应用">
+<meta property="og:url" content="http://qop.github.io/2016/04/22/2016/04-22-5/index.html">
 <meta property="og:site_name" content="qop's blog">
-<meta property="og:description" content="为了解决 js 语法上的一些局限，业界出现了coffeescript dart ts es6等，而现在 es6 和 ts 已经很成熟了。
-然后讲了 ts 是什么。ts最重要的几个特性：是js的超集，而非重新发明(not re-inverting but improve)，包含大部分 es6 的特性，可以被编译成 es5 / es6.
-再讲了一些 es6 的特性： Array/Object/Prom">
-<meta property="og:updated_time" content="2016-05-05T08:29:51.000Z">
+<meta property="og:description" content="前后端联调的进化广义的前端：浏览器，iOS/android，SSO，业务后台，存储服务现有工具对比：API定义中心化——定义一次API而可以处处复用，生成API mock，API单元测试，API文档，流程约束。两种mock方案：请求代理 vs 客户端接入
+如何确保API的可用性？——将API测试过程加入到ci流程，保证去掉mock后前端能无缝对接上后端。共享API的定义：通过定义生成文档——如何编">
+<meta property="og:image" content="http://qop.github.io/images/2016-04-qcon-联调.jpg">
+<meta property="og:updated_time" content="2016-05-05T08:32:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TypeScript 和 ECMAScript 6 实践">
-<meta name="twitter:description" content="为了解决 js 语法上的一些局限，业界出现了coffeescript dart ts es6等，而现在 es6 和 ts 已经很成熟了。
-然后讲了 ts 是什么。ts最重要的几个特性：是js的超集，而非重新发明(not re-inverting but improve)，包含大部分 es6 的特性，可以被编译成 es5 / es6.
-再讲了一些 es6 的特性： Array/Object/Prom">
+<meta name="twitter:title" content="前后端联调方案探索与应用">
+<meta name="twitter:description" content="前后端联调的进化广义的前端：浏览器，iOS/android，SSO，业务后台，存储服务现有工具对比：API定义中心化——定义一次API而可以处处复用，生成API mock，API单元测试，API文档，流程约束。两种mock方案：请求代理 vs 客户端接入
+如何确保API的可用性？——将API测试过程加入到ci流程，保证去掉mock后前端能无缝对接上后端。共享API的定义：通过定义生成文档——如何编">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -74,7 +72,7 @@
 
 
 
-  <title> TypeScript 和 ECMAScript 6 实践 | qop's blog </title>
+  <title> 前后端联调方案探索与应用 | qop's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -219,7 +217,7 @@
             
             
               
-                TypeScript 和 ECMAScript 6 实践
+                前后端联调方案探索与应用
               
             
           </h1>
@@ -239,8 +237,8 @@
             
               <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2016/04/22/2016/2016-04-22-1/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/22/2016/2016-04-22-1/" itemprop="commentsCount"></span>
+              <a href="/2016/04/22/2016/04-22-5/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/22/2016/04-22-5/" itemprop="commentsCount"></span>
               </a>
             </span>
             
@@ -259,26 +257,14 @@
       
 
       
-        <span itemprop="articleBody"><ul>
-<li>为了解决 js 语法上的一些局限，业界出现了coffeescript dart ts es6等，而现在 es6 和 ts 已经很成熟了。</li>
-<li>然后讲了 ts 是什么。ts最重要的几个特性：是js的超集，而非重新发明(not re-inverting but improve)，包含大部分 es6 的特性，可以被编译成 es5 / es6.</li>
-<li>再讲了一些 es6 的特性： Array/Object/Promise/let and const 等。</li>
-<li>回到 ts，ts已经在 dojo2 / Angular2.0 中使用，现在时机已经成熟：<ol>
-<li>简单到只要改个后缀名就work，所以迁移升级非常方便</li>
-<li>是js的超集，使用灵活</li>
-<li>在开发环境中使用，浏览器用编译过的代码</li>
-<li>可以提前使用新的es标准</li>
-<li>提供类型检测，在开发时很有用</li>
-<li>着重介绍了ts的interface</li>
-</ol>
-</li>
-</ul>
+        <span itemprop="articleBody"><p>前后端联调的进化<br>广义的前端：浏览器，iOS/android，SSO，业务后台，存储服务<br>现有工具对比：<br><img src="/images/2016-04-qcon-联调.jpg" alt="qcon-联调"><br>API定义中心化——定义一次API而可以处处复用，生成API mock，API单元测试，API文档，流程约束。<br>两种mock方案：请求代理 vs 客户端接入</p>
+<p>如何确保API的可用性？——将API测试过程加入到ci流程，保证去掉mock后前端能无缝对接上后端。<br>共享API的定义：通过定义生成文档——如何编写API: markdown超集？做了语法检查，如果不合法，在右侧预览区域显示（好像不够健壮？）<br>流程控制：API变更递归通知，项目成员可以approve和reject。（需要生成API依赖树：API1→服务A→服务B）<br>其他：<br>有状态的API由多个case定义，选其中一个组成scenario<br>API线上检测-ongoing<br>服务调用RPC(vs http)化-ongoing</p>
 <ol>
-<li>TypeScript 和 ECMAScript 6 实践</li>
+<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-1/">TypeScript 和 ECMAScript 6 实践</a></li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-2/">React 和 Ant Design 在蚂蚁金服的实践</a></li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-3/">青瓷引擎——打造 HTML5 游戏引擎开发工具之路</a></li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-4/">如何看待 left-pad 事件</a></li>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-5/">前后端联调方案探索与应用</a></li>
+<li>前后端联调方案探索与应用</li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-6/">向未来兼容——ES2015+/TypeScript 开发 Node.js 项目</a></li>
 <li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-7/">互动娱乐时代下的 Web 音视频性能优化</a></li>
 </ol>
@@ -290,15 +276,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/es2015/" rel="tag">#es2015</a>
-          
-            <a href="/tags/es6/" rel="tag">#es6</a>
-          
             <a href="/tags/qcon/" rel="tag">#qcon</a>
           
-            <a href="/tags/ts/" rel="tag">#ts</a>
-          
-            <a href="/tags/typescript/" rel="tag">#typescript</a>
+            <a href="/tags/前后端分离/" rel="tag">#前后端分离</a>
           
             <a href="/tags/前端/" rel="tag">#前端</a>
           
@@ -309,16 +289,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/22/2016/2016-04-22-7/" rel="next" title="互动娱乐时代下的 Web 音视频性能优化">
-                <i class="fa fa-chevron-left"></i> 互动娱乐时代下的 Web 音视频性能优化
+              <a href="/2016/04/22/2016/04-22-4/" rel="next" title="如何看待 left-pad 事件">
+                <i class="fa fa-chevron-left"></i> 如何看待 left-pad 事件
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/04/22/2016/2016-04-22-2/" rel="prev" title="React 和 Ant Design 在蚂蚁金服的实践">
-                React 和 Ant Design 在蚂蚁金服的实践 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/04/22/2016/04-22-7/" rel="prev" title="互动娱乐时代下的 Web 音视频性能优化">
+                互动娱乐时代下的 Web 音视频性能优化 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -388,7 +368,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">42</span>
+              <span class="site-state-item-count">43</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -512,9 +492,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'qopgithubio';
-      var disqus_identifier = '2016/04/22/2016/2016-04-22-1/';
-      var disqus_title = 'TypeScript 和 ECMAScript 6 实践';
-      var disqus_url = 'http://qop.github.io/2016/04/22/2016/2016-04-22-1/';
+      var disqus_identifier = '2016/04/22/2016/04-22-5/';
+      var disqus_title = '前后端联调方案探索与应用';
+      var disqus_url = 'http://qop.github.io/2016/04/22/2016/04-22-5/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');

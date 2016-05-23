@@ -36,7 +36,7 @@
 
 
 
-  <meta name="keywords" content="python,爬虫," />
+  <meta name="keywords" content="es2015,es6,node,qcon,ts,typescript,前端," />
 
 
 
@@ -47,19 +47,31 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="之前用python写过一些小工具，非常方便，但是没有系统学习过，所以想带着做一个简单爬虫的目的，系统地学习一下这个语言。TODO
-——————————20160314 太忙了的分割线——————————">
+<meta name="description" content="ES2015特性，stage 3 &amp;amp; 4，未来特性，async/await, decorators没有runtime支持如何使用这些特性？babel编译引入的问题：
+
+编译慢的问题——升级到npm3
+性能问题
+使用es2015-loose，性能更高(部分6x)；
+使用bluebird替代promise(3x)；https://github.com/petkaantonov/bluebird">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python爬虫(一)">
-<meta property="og:url" content="http://qop.github.io/2016/02/23/2016/2016-02-23/index.html">
+<meta property="og:title" content="向未来兼容——ES2015+/TypeScript 开发 Node.js 项目">
+<meta property="og:url" content="http://qop.github.io/2016/04/22/2016/04-22-6/index.html">
 <meta property="og:site_name" content="qop's blog">
-<meta property="og:description" content="之前用python写过一些小工具，非常方便，但是没有系统学习过，所以想带着做一个简单爬虫的目的，系统地学习一下这个语言。TODO
-——————————20160314 太忙了的分割线——————————">
-<meta property="og:updated_time" content="2016-03-25T07:26:16.000Z">
+<meta property="og:description" content="ES2015特性，stage 3 &amp;amp; 4，未来特性，async/await, decorators没有runtime支持如何使用这些特性？babel编译引入的问题：
+
+编译慢的问题——升级到npm3
+性能问题
+使用es2015-loose，性能更高(部分6x)；
+使用bluebird替代promise(3x)；https://github.com/petkaantonov/bluebird">
+<meta property="og:updated_time" content="2016-05-05T08:34:18.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python爬虫(一)">
-<meta name="twitter:description" content="之前用python写过一些小工具，非常方便，但是没有系统学习过，所以想带着做一个简单爬虫的目的，系统地学习一下这个语言。TODO
-——————————20160314 太忙了的分割线——————————">
+<meta name="twitter:title" content="向未来兼容——ES2015+/TypeScript 开发 Node.js 项目">
+<meta name="twitter:description" content="ES2015特性，stage 3 &amp;amp; 4，未来特性，async/await, decorators没有runtime支持如何使用这些特性？babel编译引入的问题：
+
+编译慢的问题——升级到npm3
+性能问题
+使用es2015-loose，性能更高(部分6x)；
+使用bluebird替代promise(3x)；https://github.com/petkaantonov/bluebird">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -71,7 +83,7 @@
 
 
 
-  <title> python爬虫(一) | qop's blog </title>
+  <title> 向未来兼容——ES2015+/TypeScript 开发 Node.js 项目 | qop's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -216,7 +228,7 @@
             
             
               
-                python爬虫(一)
+                向未来兼容——ES2015+/TypeScript 开发 Node.js 项目
               
             
           </h1>
@@ -225,8 +237,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-02-23T00:00:00+08:00" content="2016-02-23">
-              2016-02-23
+            <time itemprop="dateCreated" datetime="2016-04-22T00:00:00+08:00" content="2016-04-22">
+              2016-04-22
             </time>
           </span>
 
@@ -236,8 +248,8 @@
             
               <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2016/02/23/2016/2016-02-23/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/02/23/2016/2016-02-23/" itemprop="commentsCount"></span>
+              <a href="/2016/04/22/2016/04-22-6/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/22/2016/04-22-6/" itemprop="commentsCount"></span>
               </a>
             </span>
             
@@ -256,8 +268,25 @@
       
 
       
-        <span itemprop="articleBody"><p>之前用python写过一些小工具，非常方便，但是没有系统学习过，所以想带着做一个简单爬虫的目的，系统地学习一下这个语言。<br>TODO</p>
-<p>——————————20160314 太忙了的分割线——————————</p>
+        <span itemprop="articleBody"><p>ES2015特性，stage 3 &amp; 4，未来特性，async/await, decorators<br>没有runtime支持如何使用这些特性？babel<br>编译引入的问题：</p>
+<ol>
+<li>编译慢的问题——升级到npm3</li>
+<li>性能问题</li>
+<li>使用es2015-loose，性能更高(部分6x)；</li>
+<li>使用bluebird替代promise(3x)；<a href="https://github.com/petkaantonov/bluebird/wiki/Optimization-killers" target="_blank" rel="external">https://github.com/petkaantonov/bluebird/wiki/Optimization-killers</a></li>
+<li>如何实时编译——babel –watch</li>
+<li>报错信息定位到源代码<br>babel –retain-lines（定位不准）<br>babel –sourceMap<br>借助 source-map-support 模块</li>
+</ol>
+<p>断点调试<br>    借助 SourceMap，node-inspector、WebStorm、VS Code 等都支持借助 SourceMap 来断点调试源代码<br>    编译出错后如何快速提示——命令行编译错误信息显示在控制台→调用接口编译将错误信息打印到页面。<br>typescript<br>    先tsc，在babel（为啥？不记得了）<br>    两次编译生成SourceMap导致报错信息定位不准，solution</p>
+<ol>
+<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-1/">TypeScript 和 ECMAScript 6 实践</a></li>
+<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-2/">React 和 Ant Design 在蚂蚁金服的实践</a></li>
+<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-3/">青瓷引擎——打造 HTML5 游戏引擎开发工具之路</a></li>
+<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-4/">如何看待 left-pad 事件</a></li>
+<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-5/">前后端联调方案探索与应用</a></li>
+<li>向未来兼容——ES2015+/TypeScript 开发 Node.js 项目</li>
+<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-7/">互动娱乐时代下的 Web 音视频性能优化</a></li>
+</ol>
 </span>
       
     </div>
@@ -266,9 +295,19 @@
       
         <div class="post-tags">
           
-            <a href="/tags/python/" rel="tag">#python</a>
+            <a href="/tags/es2015/" rel="tag">#es2015</a>
           
-            <a href="/tags/爬虫/" rel="tag">#爬虫</a>
+            <a href="/tags/es6/" rel="tag">#es6</a>
+          
+            <a href="/tags/node/" rel="tag">#node</a>
+          
+            <a href="/tags/qcon/" rel="tag">#qcon</a>
+          
+            <a href="/tags/ts/" rel="tag">#ts</a>
+          
+            <a href="/tags/typescript/" rel="tag">#typescript</a>
+          
+            <a href="/tags/前端/" rel="tag">#前端</a>
           
         </div>
       
@@ -277,16 +316,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/20/2015/11-20/" rel="next" title="外卖整合沟通会">
-                <i class="fa fa-chevron-left"></i> 外卖整合沟通会
+              <a href="/2016/04/18/2016/04-18/" rel="next" title="运营商流量劫持">
+                <i class="fa fa-chevron-left"></i> 运营商流量劫持
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/03/10/2016/2016-03-10/" rel="prev" title="ci系统">
-                ci系统 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/04/22/2016/04-22/" rel="prev" title="qcon 2016 未来的前端">
+                qcon 2016 未来的前端 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -356,7 +395,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">42</span>
+              <span class="site-state-item-count">43</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -480,9 +519,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'qopgithubio';
-      var disqus_identifier = '2016/02/23/2016/2016-02-23/';
-      var disqus_title = 'python爬虫(一)';
-      var disqus_url = 'http://qop.github.io/2016/02/23/2016/2016-02-23/';
+      var disqus_identifier = '2016/04/22/2016/04-22-6/';
+      var disqus_title = '向未来兼容——ES2015+/TypeScript 开发 Node.js 项目';
+      var disqus_url = 'http://qop.github.io/2016/04/22/2016/04-22-6/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');

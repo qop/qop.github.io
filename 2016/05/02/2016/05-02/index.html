@@ -36,7 +36,7 @@
 
 
 
-  <meta name="keywords" content="前端,流量劫持," />
+  <meta name="keywords" content="react,前端," />
 
 
 
@@ -47,16 +47,31 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="脱下长日的假面，奔向梦幻的疆界。">
+<meta name="description" content="三元表达式不够灵活，比如判断状态切换显示隐藏，可能要这么写：
+1className=&amp;#123;this.state.panelShow ? &quot;datatime-panel&quot; : &quot;datatime-panel hide&quot;&amp;#125;
+
+更复杂的逻辑可能要写if…else…return不同的返回值。
+
+用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。——拆分sta">
 <meta property="og:type" content="article">
-<meta property="og:title" content="运营商流量劫持">
-<meta property="og:url" content="http://qop.github.io/2016/04/18/2016/2016-04-18/index.html">
+<meta property="og:title" content="react 使用的一些问题">
+<meta property="og:url" content="http://qop.github.io/2016/05/02/2016/05-02/index.html">
 <meta property="og:site_name" content="qop's blog">
-<meta property="og:description" content="脱下长日的假面，奔向梦幻的疆界。">
-<meta property="og:updated_time" content="2016-04-18T14:31:01.000Z">
+<meta property="og:description" content="三元表达式不够灵活，比如判断状态切换显示隐藏，可能要这么写：
+1className=&amp;#123;this.state.panelShow ? &quot;datatime-panel&quot; : &quot;datatime-panel hide&quot;&amp;#125;
+
+更复杂的逻辑可能要写if…else…return不同的返回值。
+
+用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。——拆分sta">
+<meta property="og:updated_time" content="2016-05-19T08:43:48.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="运营商流量劫持">
-<meta name="twitter:description" content="脱下长日的假面，奔向梦幻的疆界。">
+<meta name="twitter:title" content="react 使用的一些问题">
+<meta name="twitter:description" content="三元表达式不够灵活，比如判断状态切换显示隐藏，可能要这么写：
+1className=&amp;#123;this.state.panelShow ? &quot;datatime-panel&quot; : &quot;datatime-panel hide&quot;&amp;#125;
+
+更复杂的逻辑可能要写if…else…return不同的返回值。
+
+用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。——拆分sta">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -68,7 +83,7 @@
 
 
 
-  <title> 运营商流量劫持 | qop's blog </title>
+  <title> react 使用的一些问题 | qop's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -213,7 +228,7 @@
             
             
               
-                运营商流量劫持
+                react 使用的一些问题
               
             
           </h1>
@@ -222,8 +237,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-04-18T00:00:00+08:00" content="2016-04-18">
-              2016-04-18
+            <time itemprop="dateCreated" datetime="2016-05-02T00:00:00+08:00" content="2016-05-02">
+              2016-05-02
             </time>
           </span>
 
@@ -233,8 +248,8 @@
             
               <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2016/04/18/2016/2016-04-18/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/18/2016/2016-04-18/" itemprop="commentsCount"></span>
+              <a href="/2016/05/02/2016/05-02/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/05/02/2016/05-02/" itemprop="commentsCount"></span>
               </a>
             </span>
             
@@ -253,7 +268,19 @@
       
 
       
-        <span itemprop="articleBody"></span>
+        <span itemprop="articleBody"><ol>
+<li><p>三元表达式不够灵活，比如判断状态切换显示隐藏，可能要这么写：</p>
+<figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">className=&#123;this.<span class="keyword">state</span>.panelShow ? <span class="string">"datatime-panel"</span> : <span class="string">"datatime-panel hide"</span>&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更复杂的逻辑可能要写if…else…return不同的返回值。</p>
+</li>
+<li>用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。——拆分state不合理</li>
+<li>传入参数的完备性不好校验，校验失败的逻辑不好处理。——设计state有难度</li>
+<li>如果组件比较复杂，state可能会比较复杂不好维护，如果拆成小组件，他们的组合又是挑战。——redux</li>
+<li>如果要将子组件的数据传递给父组件，需要把父组件的一个函数作为回调传给子组件。——子组件给父组件只有这么办了</li>
+<li>组件之间的调用，以及交互处理没有完美的解决方案。</li>
+</ol>
+</span>
       
     </div>
 
@@ -261,9 +288,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/前端/" rel="tag">#前端</a>
+            <a href="/tags/react/" rel="tag">#react</a>
           
-            <a href="/tags/流量劫持/" rel="tag">#流量劫持</a>
+            <a href="/tags/前端/" rel="tag">#前端</a>
           
         </div>
       
@@ -272,16 +299,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/16/2016/2016-03-16/" rel="next" title="jsbridge">
-                <i class="fa fa-chevron-left"></i> jsbridge
+              <a href="/2016/04/22/2016/04-22-7/" rel="next" title="互动娱乐时代下的 Web 音视频性能优化">
+                <i class="fa fa-chevron-left"></i> 互动娱乐时代下的 Web 音视频性能优化
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/04/22/2016/2016-04-22-7/" rel="prev" title="互动娱乐时代下的 Web 音视频性能优化">
-                互动娱乐时代下的 Web 音视频性能优化 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/05/23/2016/05-23/" rel="prev" title="如何面试一名前端工程师">
+                如何面试一名前端工程师 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -351,7 +378,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">42</span>
+              <span class="site-state-item-count">43</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -475,9 +502,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'qopgithubio';
-      var disqus_identifier = '2016/04/18/2016/2016-04-18/';
-      var disqus_title = '运营商流量劫持';
-      var disqus_url = 'http://qop.github.io/2016/04/18/2016/2016-04-18/';
+      var disqus_identifier = '2016/05/02/2016/05-02/';
+      var disqus_title = 'react 使用的一些问题';
+      var disqus_url = 'http://qop.github.io/2016/05/02/2016/05-02/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');

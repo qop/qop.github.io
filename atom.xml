@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qop.github.io/"/>
-  <updated>2016-05-05T08:18:50.000Z</updated>
+  <updated>2016-05-23T09:56:11.000Z</updated>
   <id>http://qop.github.io/</id>
   
   <author>
@@ -16,18 +16,71 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何面试一名前端工程师</title>
+    <link href="http://qop.github.io/2016/05/23/2016/05-23/"/>
+    <id>http://qop.github.io/2016/05/23/2016/05-23/</id>
+    <published>2016-05-22T16:00:00.000Z</published>
+    <updated>2016-05-23T09:56:11.000Z</updated>
+    
+    <content type="html">&lt;p&gt;面试前端工程师对我来说是一件非常有意思的事，因为面试过程很大程度上也是自我提升的过程。无论大公司还是小公司，之所以在如何招聘到真正有能力的前端工程师方面会遇到同样的问题，就是因为负责招聘的那些人不知道自己公司需要什么样的人，结果问问题时也问不到点子上。经过这几年在行业里的摸索，我总结出了自己的一套很有效的面试前端工程的方法。&lt;/p&gt;
+&lt;p&gt;有的应聘者说我不好对付，但留给他们这样的印象也并非我所愿。我觉得之所以他们说我不好对付，主要是因为我问他们问题时问得太细了。以前我曾专门写过一些东西，告诉应聘者怎么才能通过我的面试以及怎样才能成为优秀的前端工程师&lt;del&gt;应该具备什么样的素质&lt;/del&gt;，而我的面试可以说完全是按照那两篇文章的标准进行的。我不会问一些特别偏门的问题，也不认为出几道逻辑题就能考出人的真实水平。我唯一的想法就是确定你能否胜任我们要招的这个职位。为此，我需要简单地考察如下几个方面。&lt;/p&gt;
+&lt;h3 id=&quot;基本知识&quot;&gt;&lt;a href=&quot;#基本知识&quot; class=&quot;headerlink&quot; title=&quot;基本知识&quot;&gt;&lt;/a&gt;基本知识&lt;/h3&gt;&lt;p&gt;我们生活在互联网时代，你想知道的任何事情几乎都能在15分钟内找到相关信息。可是，能找到信息并不等于你会使用它。我认为所有前端工程师至少都应该掌握某些基本的知识，才能有效地完成自己的工作。如果一遇到问题，就停下工作上网四处搜索解决方案，怎么可能保证按期完成工作呢？听听，还有谁在说“我不知道，但我可以上网搜到。”请这些同学把手举起来，让大家认识一下（immediately raises a flag for me.）。下面我列出一些基本的知识点，这些都是我认为一名前端工程师（无论工作年头长短）在没有任何外来帮助的情况应该知道的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DOM结构——两个节点之间可能存在哪些关系以及如何在节点之间任意移动。&lt;/li&gt;
+&lt;li&gt;DOM操作——怎样添加、移除、移动、复制、创建和查找节点。&lt;/li&gt;
+&lt;li&gt;事件——怎样使用事件以及IE和DOM事件模型之间存在哪些主要差别。&lt;/li&gt;
+&lt;li&gt;XMLHttpRequest——这是什么、怎样完整地执行一次GET请求、怎样检测错误。&lt;/li&gt;
+&lt;li&gt;严格模式与混杂模式——如何触发这两种模式，区分它们有何意义。&lt;/li&gt;
+&lt;li&gt;盒模型——外边距、内边距和边框之间的关系，IE &amp;lt; 8中的盒模型有什么不同。&lt;/li&gt;
+&lt;li&gt;块级元素与行内元素——怎么用CSS控制它们、它们怎样影响周围的元素以及你觉得应该如何定义它们的样式。&lt;/li&gt;
+&lt;li&gt;浮动元素——怎么使用它们、它们有什么问题以及怎么解决这些问题。&lt;/li&gt;
+&lt;li&gt;HTML与XHTML——二者有什么区别，你觉得应该使用哪一个并说出理由。&lt;/li&gt;
+&lt;li&gt;JSON——它是什么、为什么应该使用它、到底该怎么使用它，说出实现细节来。&lt;br&gt;重申一下，上述这些知识点都应该是你“想都不用想”就知道的东西。我一开始问的所有问题都是想摸清你对所有这些领域知识的掌握程度。虽然上面列出的这些知识点并没有面面俱到，但我觉得你至少应该掌握这些，才有可能跟我坐到一间办公室里来。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;少量提问&quot;&gt;&lt;a href=&quot;#少量提问&quot; class=&quot;headerlink&quot; title=&quot;少量提问&quot;&gt;&lt;/a&gt;少量提问&lt;/h3&gt;&lt;p&gt;我非常赞同面试者问的问题越少越好。反复问应聘者各种问题既不公平，也很无聊。我在任何一次面试中，通常只问三个大问题，但每个问题又会涉及我所能想到的多个方面。回答每个大问题一般要经过几个步骤，这样我就可以在每个步骤中穿插着问一些小问题。比如说：&lt;/p&gt;
+&lt;figure class=&quot;highlight erlang-repl&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;现在有一个正显示着&lt;span class=&quot;variable&quot;&gt;Yahoo&lt;/span&gt;&lt;span class=&quot;exclamation_mark&quot;&gt;!&lt;/span&gt;股票价格的页面。页面上有一个按钮，你可以单击它来刷新价格，但不会重新加载页面。请你描述一下实现这个功能的过程，假设服务器会负责准备好正确的股票价格数据。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这个问题牵扯到一组我想要考察的基本知识点：DOM结构、DOM操作、事件处理、XHR和JSON。如果我要求你换一种处理股票价格的方式，或者让你在页面中显示其他信息，就可以把更多的知识点包括进来。对于经验比较丰富的应聘者，我也可以自如地扩展要考察的知识范围，最简单像JOSN与XML的区别、安全问题、容量问题，等等。&lt;/p&gt;
+&lt;p&gt;我还希望应聘者给出的任何解决方案中都不要使用库。我想看到最原生态的代码，你就当页面中没有包含任何库。你说你对哪个库了解多少多少，但我不能把关于库的知识作为评判能力的因素，因为库是会随时间变化的。我需要的是真正理解库背后的机制，特别是能够徒手写出一个自己的库的人。&lt;/p&gt;
+&lt;h3 id=&quot;解决问题&quot;&gt;&lt;a href=&quot;#解决问题&quot; class=&quot;headerlink&quot; title=&quot;解决问题&quot;&gt;&lt;/a&gt;解决问题&lt;/h3&gt;&lt;p&gt;做为一名前端工程师，最值得高兴的事莫过于解决同一个问题会有很多种不同的方法，而你要做的就是找出最合适的方法来。我在提问的时候，经常会在应聘者解释完一种方法后问他们还有没有第二种方法。此时我会跟他们说，&lt;strong&gt;假设你的这个方法由于种种原因被否决了，那么你还能不能给出另一种方法。&lt;/strong&gt;这样做可以达到两个目的。&lt;/p&gt;
+&lt;p&gt;首先，可以测试出他们是否在毫无意义地复述书本中的东西。不能不承认，某些人确实有过目不忘的天赋，听他们在那里滔滔不绝地讲，你会觉得他们什么都明白。可是，只要一跟这些人谈到怎么查找方案无效的原因，以及能否拿出一个新方案来，他们往往就傻眼了。这时候，如果我听到“我不明白这个方案为什么不够好”之类的反问，心里立刻就明白我的问题已经超出了他们的能力范围，而他们只是想拿自己死记硬背的结论来蒙混过关。&lt;/p&gt;
+&lt;p&gt;其次，可以测试出他们已经掌握的（还是那句话，“想都不用想”就知道的）浏览器技术知识。如果他们对浏览器平台的核心知识有较好的理解，想出解决同一问题的不同方案根本没有那么难。&lt;/p&gt;
+&lt;p&gt;对一名前端工程师来说，这绝对是最重要的能力。前端工程师在工作中遇到本该如此却并未如此的难题（说你啦，IE6），应该说是一件很平常的事。一个方案无效就无计可施的人，做不了前端工程师。&lt;/p&gt;
+&lt;p&gt;考核应聘者解决问题能力的另一层原因，与我的个人喜好有关。在搞清楚应聘者知道什么不知道什么之后，我就会想着问一个他们知识领域之外的问题。这样做的目的，就是想看看他们怎样运用已有的知识解决新问题。在解决问题的每一步，我也准备了一些提示，以防有人会卡壳打艮（在我面前15分钟一言不发，对我评价这个人毫无帮助）。我真正感兴趣的，是他们能够从上一步前进到下一步。我希望看到一个人就在我眼前学到新知识。&lt;/p&gt;
+&lt;p&gt;注意：所有问题都与浏览器技术相关。我不相信出几道抽象的逻辑题，就能够考出某人解决Web技术问题的能力。在我看来，这无异于让素描大师画肖像（或者让刘翔跟博尔特同场竞技），没有意义，也得不到任何有价值的信息。&lt;/p&gt;
+&lt;h3 id=&quot;有激情&quot;&gt;&lt;a href=&quot;#有激情&quot; class=&quot;headerlink&quot; title=&quot;有激情&quot;&gt;&lt;/a&gt;有激情&lt;/h3&gt;&lt;p&gt;要成为一名优秀的前端工程师，最重要的莫过于对自己做的事要有激情。我们的技能都不是从学校中或者研讨会上学来的，因此前端工程师必须具备自学能力。浏览器技术的变化可谓日新月异，所以也只有不断提升自己的技能才做得到与时俱进。我虽然不能强迫谁必须多看博客、不断学习，但想应聘前端工程师的人恐怕还是必须得这么做。&lt;/p&gt;
+&lt;p&gt;你怎么知道谁对这种工作有没有激情？实际上非常简单。我只问一个简单的问题：&lt;strong&gt;“目前你对什么Web技术最感兴趣？”&lt;/strong&gt;这个问题永远不会过期，而且也几乎不可能出错……除非你答不上来。就眼下来说，我希望你对这个问题给出的技术中包括WebSocket、HTML、WebGL、客户端数据库，等等。只有对Web开发充满激情的人，才会坚持不懈地学习新知识、掌握新技能；这些人才是我真正想要的。当然，我会让他们详细解释自己提到的技术，以保证他们不是随口念叨了几个时髦的新词汇。&lt;/p&gt;
+&lt;h3 id=&quot;最后一点&quot;&gt;&lt;a href=&quot;#最后一点&quot; class=&quot;headerlink&quot; title=&quot;最后一点&quot;&gt;&lt;/a&gt;最后一点&lt;/h3&gt;&lt;p&gt;计算机科学或者Web设计方面的知识当然也有用，但那都是基本知识之外的东西。只要基本知识在那儿了，一切就都有了基础，想扩充知识面也不难。可是，如果等到正式上班以后，还得从头学习基本技能，那种难度是不可同日而语的。另外，高级前端工程师与一般工程师相比，肯定需要掌握更多的技能。而面试几乎没有经验的大学毕业生，我也会有一套完全不同的程序。我在这篇文章里列出来的都是一些最基本的东西。&lt;/p&gt;
+&lt;p&gt;对于那些还没有多少面试经验的人，我总是喜欢告诉他们，面试完了只要问自己一个问题就行：&lt;strong&gt;你想以后跟这个人在一起共事吗？如果不管为什么，回答是不，那就是不。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;原文链接：&lt;a href=&quot;!https://www.nczonline.net/blog/2010/01/05/interviewing-the-front-end-engineer/&quot;&gt;https://www.nczonline.net/blog/2010/01/05/interviewing-the-front-end-engineer/&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;面试前端工程师对我来说是一件非常有意思的事，因为面试过程很大程度上也是自我提升的过程。无论大公司还是小公司，之所以在如何招聘到真正有能力的前端工程师方面会遇到同样的问题，就是因为负责招聘的那些人不知道自己公司需要什么样的人，结果问问题时也问不到点子上。经过这几年在行业里的摸
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="面试" scheme="http://qop.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>react 使用的一些问题</title>
-    <link href="http://qop.github.io/2016/05/02/2016/2016-05-02/"/>
-    <id>http://qop.github.io/2016/05/02/2016/2016-05-02/</id>
+    <link href="http://qop.github.io/2016/05/02/2016/05-02/"/>
+    <id>http://qop.github.io/2016/05/02/2016/05-02/</id>
     <published>2016-05-01T16:00:00.000Z</published>
-    <updated>2016-05-05T08:18:50.000Z</updated>
+    <updated>2016-05-19T08:43:48.000Z</updated>
     
     <content type="html">&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;三元表达式不够灵活，比如判断状态切换显示隐藏，可能要这么写：&lt;/p&gt;
 &lt;figure class=&quot;highlight pf&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;className=&amp;#123;this.&lt;span class=&quot;keyword&quot;&gt;state&lt;/span&gt;.panelShow ? &lt;span class=&quot;string&quot;&gt;&quot;datatime-panel&quot;&lt;/span&gt; : &lt;span class=&quot;string&quot;&gt;&quot;datatime-panel hide&quot;&lt;/span&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。——拆分state不合理&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;更复杂的逻辑可能要写if…else…return不同的返回值。&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;用this.props传递数据，但数据可能是变化的，拿来当state用，比较奇怪。——拆分state不合理&lt;/li&gt;
 &lt;li&gt;传入参数的完备性不好校验，校验失败的逻辑不好处理。——设计state有难度&lt;/li&gt;
 &lt;li&gt;如果组件比较复杂，state可能会比较复杂不好维护，如果拆成小组件，他们的组合又是挑战。——redux&lt;/li&gt;
 &lt;li&gt;如果要将子组件的数据传递给父组件，需要把父组件的一个函数作为回调传给子组件。——子组件给父组件只有这么办了&lt;/li&gt;
@@ -51,14 +104,13 @@
   </entry>
   
   <entry>
-    <title>qcon 2016 未来的前端</title>
-    <link href="http://qop.github.io/2016/04/22/2016/2016-04-22/"/>
-    <id>http://qop.github.io/2016/04/22/2016/2016-04-22/</id>
+    <title>互动娱乐时代下的 Web 音视频性能优化</title>
+    <link href="http://qop.github.io/2016/04/22/2016/04-22-7/"/>
+    <id>http://qop.github.io/2016/04/22/2016/04-22-7/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-05-05T08:30:04.000Z</updated>
+    <updated>2016-05-05T08:34:30.000Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;未来的前端专题简介&quot;&gt;&lt;a href=&quot;#未来的前端专题简介&quot; class=&quot;headerlink&quot; title=&quot;未来的前端专题简介&quot;&gt;&lt;/a&gt;&lt;a href=&quot;!http://2016.qconbeijing.com/track/2782&quot;&gt;未来的前端专题简介&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;2016 QCon beijing 前端专场，除了隔壁的移动开发挑战专场分享了阿里的Weex和携程的ReactMix几乎所有的前端主题都在这里了。&lt;br&gt;本届 QCon 的前端专场主要是在讨论前端技术未来的发展趋势，主题主要有两方面：一是讨论新的规范和标准（ECMAScript 6, TypeScript, React等），二是分享一些成熟的前端解决方案。&lt;/p&gt;
-&lt;hr&gt;
+    <content type="html">&lt;p&gt;关键技术：&lt;br&gt;    自己封装的音视频sdk，私有协议与flash互通。&lt;br&gt;遇到的挑战：（如何优化？）&lt;br&gt;    首屏时间&lt;br&gt;    实时性&lt;br&gt;    流畅性&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
@@ -66,72 +118,20 @@
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-6/&quot;&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/li&gt;
 &lt;/ol&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;未来的前端专题简介&quot;&gt;&lt;a href=&quot;#未来的前端专题简介&quot; class=&quot;headerlink&quot; title=&quot;未来的前端专题简介&quot;&gt;&lt;/a&gt;&lt;a href=&quot;!http://2016.qconbeijing.com/track/2782&quot;&gt;未来的前端专题简介
+      &lt;p&gt;关键技术：&lt;br&gt;    自己封装的音视频sdk，私有协议与flash互通。&lt;br&gt;遇到的挑战：（如何优化？）&lt;br&gt;    首屏时间&lt;br&gt;    实时性&lt;br&gt;    流畅性&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016
     
     </summary>
     
     
       <category term="qcon" scheme="http://qop.github.io/tags/qcon/"/>
-    
-      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>向未来兼容——ES2015+/TypeScript 开发 Node.js 项目</title>
-    <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-6/"/>
-    <id>http://qop.github.io/2016/04/22/2016/2016-04-22-6/</id>
-    <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-05-05T08:34:18.000Z</updated>
-    
-    <content type="html">&lt;p&gt;ES2015特性，stage 3 &amp;amp; 4，未来特性，async/await, decorators&lt;br&gt;没有runtime支持如何使用这些特性？babel&lt;br&gt;编译引入的问题：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;编译慢的问题——升级到npm3&lt;/li&gt;
-&lt;li&gt;性能问题&lt;/li&gt;
-&lt;li&gt;使用es2015-loose，性能更高(部分6x)；&lt;/li&gt;
-&lt;li&gt;使用bluebird替代promise(3x)；&lt;a href=&quot;https://github.com/petkaantonov/bluebird/wiki/Optimization-killers&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/petkaantonov/bluebird/wiki/Optimization-killers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;如何实时编译——babel –watch&lt;/li&gt;
-&lt;li&gt;报错信息定位到源代码&lt;br&gt;babel –retain-lines（定位不准）&lt;br&gt;babel –sourceMap&lt;br&gt;借助 source-map-support 模块&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;断点调试&lt;br&gt;    借助 SourceMap，node-inspector、WebStorm、VS Code 等都支持借助 SourceMap 来断点调试源代码&lt;br&gt;    编译出错后如何快速提示——命令行编译错误信息显示在控制台→调用接口编译将错误信息打印到页面。&lt;br&gt;typescript&lt;br&gt;    先tsc，在babel（为啥？不记得了）&lt;br&gt;    两次编译生成SourceMap导致报错信息定位不准，solution&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-3/&quot;&gt;青瓷引擎——打造 HTML5 游戏引擎开发工具之路&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;ES2015特性，stage 3 &amp;amp; 4，未来特性，async/await, decorators&lt;br&gt;没有runtime支持如何使用这些特性？babel&lt;br&gt;编译引入的问题：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;编译慢的问题——升级到npm3&lt;/li&gt;
-&lt;li&gt;性能问题
-    
-    </summary>
-    
-    
-      <category term="es2015" scheme="http://qop.github.io/tags/es2015/"/>
-    
-      <category term="es6" scheme="http://qop.github.io/tags/es6/"/>
-    
-      <category term="node" scheme="http://qop.github.io/tags/node/"/>
-    
-      <category term="qcon" scheme="http://qop.github.io/tags/qcon/"/>
-    
-      <category term="ts" scheme="http://qop.github.io/tags/ts/"/>
-    
-      <category term="typescript" scheme="http://qop.github.io/tags/typescript/"/>
     
       <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
@@ -139,8 +139,8 @@
   
   <entry>
     <title>前后端联调方案探索与应用</title>
-    <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-5/"/>
-    <id>http://qop.github.io/2016/04/22/2016/2016-04-22-5/</id>
+    <link href="http://qop.github.io/2016/04/22/2016/04-22-5/"/>
+    <id>http://qop.github.io/2016/04/22/2016/04-22-5/</id>
     <published>2016-04-21T16:00:00.000Z</published>
     <updated>2016-05-05T08:32:58.000Z</updated>
     
@@ -174,8 +174,8 @@
   
   <entry>
     <title>如何看待 left-pad 事件</title>
-    <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-4/"/>
-    <id>http://qop.github.io/2016/04/22/2016/2016-04-22-4/</id>
+    <link href="http://qop.github.io/2016/04/22/2016/04-22-4/"/>
+    <id>http://qop.github.io/2016/04/22/2016/04-22-4/</id>
     <published>2016-04-21T16:00:00.000Z</published>
     <updated>2016-05-05T08:28:23.000Z</updated>
     
@@ -232,8 +232,8 @@
   
   <entry>
     <title>青瓷引擎——打造 HTML5 游戏引擎开发工具之路</title>
-    <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-3/"/>
-    <id>http://qop.github.io/2016/04/22/2016/2016-04-22-3/</id>
+    <link href="http://qop.github.io/2016/04/22/2016/04-22-3/"/>
+    <id>http://qop.github.io/2016/04/22/2016/04-22-3/</id>
     <published>2016-04-21T16:00:00.000Z</published>
     <updated>2016-05-05T08:27:10.000Z</updated>
     
@@ -276,8 +276,8 @@
   
   <entry>
     <title>React 和 Ant Design 在蚂蚁金服的实践</title>
-    <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-2/"/>
-    <id>http://qop.github.io/2016/04/22/2016/2016-04-22-2/</id>
+    <link href="http://qop.github.io/2016/04/22/2016/04-22-2/"/>
+    <id>http://qop.github.io/2016/04/22/2016/04-22-2/</id>
     <published>2016-04-21T16:00:00.000Z</published>
     <updated>2016-05-05T08:26:47.000Z</updated>
     
@@ -339,8 +339,8 @@
   
   <entry>
     <title>TypeScript 和 ECMAScript 6 实践</title>
-    <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-1/"/>
-    <id>http://qop.github.io/2016/04/22/2016/2016-04-22-1/</id>
+    <link href="http://qop.github.io/2016/04/22/2016/04-22-1/"/>
+    <id>http://qop.github.io/2016/04/22/2016/04-22-1/</id>
     <published>2016-04-21T16:00:00.000Z</published>
     <updated>2016-05-05T08:29:51.000Z</updated>
     
@@ -393,13 +393,14 @@
   </entry>
   
   <entry>
-    <title>互动娱乐时代下的 Web 音视频性能优化</title>
-    <link href="http://qop.github.io/2016/04/22/2016/2016-04-22-7/"/>
-    <id>http://qop.github.io/2016/04/22/2016/2016-04-22-7/</id>
+    <title>qcon 2016 未来的前端</title>
+    <link href="http://qop.github.io/2016/04/22/2016/04-22/"/>
+    <id>http://qop.github.io/2016/04/22/2016/04-22/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-05-05T08:34:30.000Z</updated>
+    <updated>2016-05-05T08:30:04.000Z</updated>
     
-    <content type="html">&lt;p&gt;关键技术：&lt;br&gt;    自己封装的音视频sdk，私有协议与flash互通。&lt;br&gt;遇到的挑战：（如何优化？）&lt;br&gt;    首屏时间&lt;br&gt;    实时性&lt;br&gt;    流畅性&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;未来的前端专题简介&quot;&gt;&lt;a href=&quot;#未来的前端专题简介&quot; class=&quot;headerlink&quot; title=&quot;未来的前端专题简介&quot;&gt;&lt;/a&gt;&lt;a href=&quot;!http://2016.qconbeijing.com/track/2782&quot;&gt;未来的前端专题简介&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;2016 QCon beijing 前端专场，除了隔壁的移动开发挑战专场分享了阿里的Weex和携程的ReactMix几乎所有的前端主题都在这里了。&lt;br&gt;本届 QCon 的前端专场主要是在讨论前端技术未来的发展趋势，主题主要有两方面：一是讨论新的规范和标准（ECMAScript 6, TypeScript, React等），二是分享一些成熟的前端解决方案。&lt;/p&gt;
+&lt;hr&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
@@ -407,15 +408,13 @@
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-6/&quot;&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;关键技术：&lt;br&gt;    自己封装的音视频sdk，私有协议与flash互通。&lt;br&gt;遇到的挑战：（如何优化？）&lt;br&gt;    首屏时间&lt;br&gt;    实时性&lt;br&gt;    流畅性&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016
+      &lt;h2 id=&quot;未来的前端专题简介&quot;&gt;&lt;a href=&quot;#未来的前端专题简介&quot; class=&quot;headerlink&quot; title=&quot;未来的前端专题简介&quot;&gt;&lt;/a&gt;&lt;a href=&quot;!http://2016.qconbeijing.com/track/2782&quot;&gt;未来的前端专题简介
     
     </summary>
     
@@ -427,9 +426,63 @@
   </entry>
   
   <entry>
+    <title>向未来兼容——ES2015+/TypeScript 开发 Node.js 项目</title>
+    <link href="http://qop.github.io/2016/04/22/2016/04-22-6/"/>
+    <id>http://qop.github.io/2016/04/22/2016/04-22-6/</id>
+    <published>2016-04-21T16:00:00.000Z</published>
+    <updated>2016-05-05T08:34:18.000Z</updated>
+    
+    <content type="html">&lt;p&gt;ES2015特性，stage 3 &amp;amp; 4，未来特性，async/await, decorators&lt;br&gt;没有runtime支持如何使用这些特性？babel&lt;br&gt;编译引入的问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;编译慢的问题——升级到npm3&lt;/li&gt;
+&lt;li&gt;性能问题&lt;/li&gt;
+&lt;li&gt;使用es2015-loose，性能更高(部分6x)；&lt;/li&gt;
+&lt;li&gt;使用bluebird替代promise(3x)；&lt;a href=&quot;https://github.com/petkaantonov/bluebird/wiki/Optimization-killers&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/petkaantonov/bluebird/wiki/Optimization-killers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;如何实时编译——babel –watch&lt;/li&gt;
+&lt;li&gt;报错信息定位到源代码&lt;br&gt;babel –retain-lines（定位不准）&lt;br&gt;babel –sourceMap&lt;br&gt;借助 source-map-support 模块&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;断点调试&lt;br&gt;    借助 SourceMap，node-inspector、WebStorm、VS Code 等都支持借助 SourceMap 来断点调试源代码&lt;br&gt;    编译出错后如何快速提示——命令行编译错误信息显示在控制台→调用接口编译将错误信息打印到页面。&lt;br&gt;typescript&lt;br&gt;    先tsc，在babel（为啥？不记得了）&lt;br&gt;    两次编译生成SourceMap导致报错信息定位不准，solution&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-3/&quot;&gt;青瓷引擎——打造 HTML5 游戏引擎开发工具之路&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;ES2015特性，stage 3 &amp;amp; 4，未来特性，async/await, decorators&lt;br&gt;没有runtime支持如何使用这些特性？babel&lt;br&gt;编译引入的问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;编译慢的问题——升级到npm3&lt;/li&gt;
+&lt;li&gt;性能问题
+    
+    </summary>
+    
+    
+      <category term="es2015" scheme="http://qop.github.io/tags/es2015/"/>
+    
+      <category term="es6" scheme="http://qop.github.io/tags/es6/"/>
+    
+      <category term="node" scheme="http://qop.github.io/tags/node/"/>
+    
+      <category term="qcon" scheme="http://qop.github.io/tags/qcon/"/>
+    
+      <category term="ts" scheme="http://qop.github.io/tags/ts/"/>
+    
+      <category term="typescript" scheme="http://qop.github.io/tags/typescript/"/>
+    
+      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>运营商流量劫持</title>
-    <link href="http://qop.github.io/2016/04/18/2016/2016-04-18/"/>
-    <id>http://qop.github.io/2016/04/18/2016/2016-04-18/</id>
+    <link href="http://qop.github.io/2016/04/18/2016/04-18/"/>
+    <id>http://qop.github.io/2016/04/18/2016/04-18/</id>
     <published>2016-04-17T16:00:00.000Z</published>
     <updated>2016-04-18T14:31:01.000Z</updated>
     
@@ -448,8 +501,8 @@
   
   <entry>
     <title>jsbridge</title>
-    <link href="http://qop.github.io/2016/03/16/2016/2016-03-16/"/>
-    <id>http://qop.github.io/2016/03/16/2016/2016-03-16/</id>
+    <link href="http://qop.github.io/2016/03/16/2016/03-16/"/>
+    <id>http://qop.github.io/2016/03/16/2016/03-16/</id>
     <published>2016-03-15T16:00:00.000Z</published>
     <updated>2016-03-25T07:26:23.000Z</updated>
     
@@ -472,8 +525,8 @@
   
   <entry>
     <title>ci系统</title>
-    <link href="http://qop.github.io/2016/03/10/2016/2016-03-10/"/>
-    <id>http://qop.github.io/2016/03/10/2016/2016-03-10/</id>
+    <link href="http://qop.github.io/2016/03/10/2016/03-10/"/>
+    <id>http://qop.github.io/2016/03/10/2016/03-10/</id>
     <published>2016-03-09T16:00:00.000Z</published>
     <updated>2016-03-25T07:26:20.000Z</updated>
     
@@ -529,8 +582,8 @@
   
   <entry>
     <title>python爬虫(一)</title>
-    <link href="http://qop.github.io/2016/02/23/2016/2016-02-23/"/>
-    <id>http://qop.github.io/2016/02/23/2016/2016-02-23/</id>
+    <link href="http://qop.github.io/2016/02/23/2016/02-23/"/>
+    <id>http://qop.github.io/2016/02/23/2016/02-23/</id>
     <published>2016-02-22T16:00:00.000Z</published>
     <updated>2016-03-25T07:26:16.000Z</updated>
     
@@ -724,47 +777,6 @@
       <category term="广告" scheme="http://qop.github.io/tags/%E5%B9%BF%E5%91%8A/"/>
     
       <category term="流量" scheme="http://qop.github.io/tags/%E6%B5%81%E9%87%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于社会阶层的一点浅薄理解</title>
-    <link href="http://qop.github.io/2014/08/03/2014/08-03/"/>
-    <id>http://qop.github.io/2014/08/03/2014/08-03/</id>
-    <published>2014-08-02T16:00:00.000Z</published>
-    <updated>2016-02-23T08:13:08.000Z</updated>
-    
-    <content type="html">&lt;p&gt;　　记得本科的时候看到过一篇『中国社会阶层划分』的帖子，当时奉为真理，但是过了这么长的时间，经过看山不是山，看山还是山的变化，终于有了更多理性的认识。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;缘于今天下午群里讨论才知道初高中同学有这么多富二代官二代，可惜『壕友乎』的人貌似都玩不来，当然了，别人都是有自己的圈子的。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;那些父辈们的积累，不论是资源、经济还是人脉都提供了更高的起点，有的人少100分能上985，有人毕业一两年就能当分行行长，这些先天鸿沟之巨大也许要穷尽一生的奋斗才能追上。&lt;br&gt;比如体制内，公务员家庭的孩子自然得到更多这方面的培养，甚至从高中开始就进行职业规划，读完本科顺理成章地走上仕途。&lt;br&gt;比如资本家（无贬义），有些人通过资本运作就能轻松财务自由，比如收房租月入数万，比如继承了家族产业。&lt;br&gt;比如国家电网家庭的孩子，高考专业就填电气，随便混个证书，回来就能安排个钱多事少离家近的工作，更别提以后加薪升迁都有人罩了。&lt;br&gt;像我这种野蛮生长的人直到高考结束出了分要填志愿了还不知道自己要干嘛。好在我误打误撞进入了一个让人激昂的行业，这个行业有着无法比拟的魅力，见下文。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;健康的社会阶层是纺锤形，下面有少量无家可归的人，顶上是有话语权的当权者，而白领、工程师努力一点可以达到中产。中产下面一点是基数庞大的工薪阶层。&lt;br&gt;阶层的通道很狭窄，但是并非不可能，大部分人奋斗一生也只能够上升一个阶层，这已经是其中的佼佼者了，当然，不排除少数天才由白手起家到世界首富，从一无所有到大权在握。&lt;br&gt;在阶层划分的角度，先天差异是后天努力所不能弥补的，比如治博拿了华为的offer，那么拿华为举例，可分为任正非为首的最高管理层，占据一定比例的的中层管理者和技术牛人，数量庞大的一线工程师这三层。可以预见的是治博作为一个工程师，可能成长为一个技术牛人（跨一层），但是做不到公司董事会（跨两层）。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;阶层的固化会滋生腐败，钱权勾结。&lt;br&gt;对于封建社会来讲，有了科举这个非常科学的渠道，可以让上下层进行一定的流通，是保证权力健康的一种方式（监察等机制不谈），所以科举是有划时代意义的。可以类比今天的高考，我也认为高考可以说是当今社会最公平的事情了。&lt;br&gt;但是一旦阶层固化的恶果达到一定程度，纺锤型变为金字塔型，加上上下沟通无力，配合天时（瘟疫饥荒等），立刻就能带来农民（社会最底层）起义。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;阶层的稳固也有一定的积极意义。&lt;br&gt;可以对比机会平等和结果平等。机会平等主张市场经济小政府，人与人之间无差别地自由竞争，主张教育医疗自理按劳分配。结果平等代表完全的社会主义，高税收高福利大政府，由国家补贴均衡人与人之间的差距，主张全民医保教育按需分配。&lt;br&gt;在绝对的机会平等之下，贫富差距会瞬间拉大，社会陷入巨大的动荡之中。&lt;br&gt;而在绝对的结果平等之下，社会死气沉沉，生产力底下。&lt;br&gt;一方面机会平等可以增加上下阶层的流通，但是却带来社会动荡，此时适当的结果平等可以稳固社会的底层。&lt;br&gt;另一方面结果平等可以让所有人不思进取，社会结构迅速扁平，整体生产力下降。——这里思维有点乱，有点辞不达义。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;在中国社会的大多数行业，资源和经济带来的鸿沟都是很难抹平的。&lt;br&gt;唯有——这是一段心酸的对话：—IT不拼爹。—但是IT拼命啊。—没爹拼只有拼命咯。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;为什么IT不拼爹。&lt;br&gt;战争和性是旧社会财富再分配的两种基本形式，现代社会可能会好一点，多了很多技术岗位，但是依然有很大的局限性。&lt;br&gt;互联网其实属于『有技术含量可爆发增长的』服务业。&lt;br&gt;不像摊蛋饼努力点收入多几成，上限也摆在那里。为什么互联网造富，因为这行没有沉淀，没有（那么厉害的）资源上的垄断。不断创新发掘增长点，解放生产力，或者说革传统行业的命。比如，电商对传统零售业的打击，可类比18世纪英国纺织机对手工业的打击。一下子效率提高几倍十几倍，传统行业的利润就会到互联网行业。年轻的行业伴随着的就是『战争』。&lt;br&gt;至于有技术含量，这是互联网不拼爹的另一个条件了。因为知识这个东西无法继承，老爹学习好孩子不一定就会编程。&lt;br&gt;可以预见的是，如果哪天互联网没有创新了，过不了多久，也不再适合拼搏。——其实互联网的黄金年代已经过去了，君不见BAT各种垄断或者收购。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;其实认清自己的阶层也没有多大的不好，毕竟幸福感和钱或者权没有太大的关系，然后在自己力所能及的范围内进行奋斗就好了。对于没有爹可拼的一众葫芦娃来说，达到中产这辈子也算是成功了吧。再往上一点就是财务自由，做自己觉得更有个人价值或者社会价值的事情。&lt;br&gt;不过通过资本积累达到财务自由对我们几乎不可能，除非创业获得爆发式增长。但是财务自由和收入关系不是那么大的，限定在超市自由，适当降低自己的欲望，还是可能做到的。相对的，富裕家庭如果有个天天买lv的子女也无法财务自由。&lt;br&gt;最后，以上只是讨论一种可行性，实际还是很难。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　记得本科的时候看到过一篇『中国社会阶层划分』的帖子，当时奉为真理，但是过了这么长的时间，经过看山不是山，看山还是山的变化，终于有了更多理性的认识。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;缘于今天下午群里讨论才知道初高中同学有这么多富二代官二代，可惜『壕友乎』的人貌似都玩不来，
-    
-    </summary>
-    
-    
-      <category term="阶层" scheme="http://qop.github.io/tags/%E9%98%B6%E5%B1%82/"/>
     
   </entry>
   

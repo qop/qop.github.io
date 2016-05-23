@@ -36,7 +36,7 @@
 
 
 
-  <meta name="keywords" content="qcon,前端," />
+  <meta name="keywords" content="ci,nodejs,前端," />
 
 
 
@@ -47,25 +47,31 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
 
 
-<meta name="description" content="未来的前端专题简介2016 QCon beijing 前端专场，除了隔壁的移动开发挑战专场分享了阿里的Weex和携程的ReactMix几乎所有的前端主题都在这里了。本届 QCon 的前端专场主要是在讨论前端技术未来的发展趋势，主题主要有两方面：一是讨论新的规范和标准（ECMAScript 6, TypeScript, React等），二是分享一些成熟的前端解决方案。
+<meta name="description" content="一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。
 
+读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。
+1234&apos;echo $PATH&apos;,&apos;node -v&apos;,&apos;npm -v&apos;,&apos;npm config get registry&apos;
 
-TypeScript 和">
+清空destination，此处可以由用户（此处用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="qcon 2016 未来的前端">
-<meta property="og:url" content="http://qop.github.io/2016/04/22/2016/2016-04-22/index.html">
+<meta property="og:title" content="ci系统">
+<meta property="og:url" content="http://qop.github.io/2016/03/10/2016/03-10/index.html">
 <meta property="og:site_name" content="qop's blog">
-<meta property="og:description" content="未来的前端专题简介2016 QCon beijing 前端专场，除了隔壁的移动开发挑战专场分享了阿里的Weex和携程的ReactMix几乎所有的前端主题都在这里了。本届 QCon 的前端专场主要是在讨论前端技术未来的发展趋势，主题主要有两方面：一是讨论新的规范和标准（ECMAScript 6, TypeScript, React等），二是分享一些成熟的前端解决方案。
+<meta property="og:description" content="一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。
 
+读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。
+1234&apos;echo $PATH&apos;,&apos;node -v&apos;,&apos;npm -v&apos;,&apos;npm config get registry&apos;
 
-TypeScript 和">
-<meta property="og:updated_time" content="2016-05-05T08:30:04.000Z">
+清空destination，此处可以由用户（此处用">
+<meta property="og:updated_time" content="2016-03-25T07:26:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="qcon 2016 未来的前端">
-<meta name="twitter:description" content="未来的前端专题简介2016 QCon beijing 前端专场，除了隔壁的移动开发挑战专场分享了阿里的Weex和携程的ReactMix几乎所有的前端主题都在这里了。本届 QCon 的前端专场主要是在讨论前端技术未来的发展趋势，主题主要有两方面：一是讨论新的规范和标准（ECMAScript 6, TypeScript, React等），二是分享一些成熟的前端解决方案。
+<meta name="twitter:title" content="ci系统">
+<meta name="twitter:description" content="一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。
 
+读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。
+1234&apos;echo $PATH&apos;,&apos;node -v&apos;,&apos;npm -v&apos;,&apos;npm config get registry&apos;
 
-TypeScript 和">
+清空destination，此处可以由用户（此处用">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -77,7 +83,7 @@ TypeScript 和">
 
 
 
-  <title> qcon 2016 未来的前端 | qop's blog </title>
+  <title> ci系统 | qop's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -222,7 +228,7 @@ TypeScript 和">
             
             
               
-                qcon 2016 未来的前端
+                ci系统
               
             
           </h1>
@@ -231,8 +237,8 @@ TypeScript 和">
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-04-22T00:00:00+08:00" content="2016-04-22">
-              2016-04-22
+            <time itemprop="dateCreated" datetime="2016-03-10T00:00:00+08:00" content="2016-03-10">
+              2016-03-10
             </time>
           </span>
 
@@ -242,8 +248,8 @@ TypeScript 和">
             
               <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2016/04/22/2016/2016-04-22/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/04/22/2016/2016-04-22/" itemprop="commentsCount"></span>
+              <a href="/2016/03/10/2016/03-10/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/03/10/2016/03-10/" itemprop="commentsCount"></span>
               </a>
             </span>
             
@@ -262,17 +268,36 @@ TypeScript 和">
       
 
       
-        <span itemprop="articleBody"><h2 id="未来的前端专题简介"><a href="#未来的前端专题简介" class="headerlink" title="未来的前端专题简介"></a><a href="!http://2016.qconbeijing.com/track/2782">未来的前端专题简介</a></h2><p>2016 QCon beijing 前端专场，除了隔壁的移动开发挑战专场分享了阿里的Weex和携程的ReactMix几乎所有的前端主题都在这里了。<br>本届 QCon 的前端专场主要是在讨论前端技术未来的发展趋势，主题主要有两方面：一是讨论新的规范和标准（ECMAScript 6, TypeScript, React等），二是分享一些成熟的前端解决方案。</p>
-<hr>
-<ol>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-1/">TypeScript 和 ECMAScript 6 实践</a></li>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-2/">React 和 Ant Design 在蚂蚁金服的实践</a></li>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-3/">青瓷引擎——打造 HTML5 游戏引擎开发工具之路</a></li>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-4/">如何看待 left-pad 事件</a></li>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-5/">前后端联调方案探索与应用</a></li>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-6/">向未来兼容——ES2015+/TypeScript 开发 Node.js 项目</a></li>
-<li><a href="http://qop.github.io/2016/04/22/2016/2016-04-22-7/">互动娱乐时代下的 Web 音视频性能优化</a></li>
-</ol>
+        <span itemprop="articleBody"><p>一般来说ci要做的事情就是把开发环境的代码构建完之后丢到线上去，这里面ci系统要做哪些事，开哪些口子都得看实际的业务需要，本文只是列举一个比较好的实践。</p>
+<ul>
+<li><p>读取当前系统环境，打印在日志上方便排查由于环境或者版本造成的问题。</p>
+<figure class="highlight ocaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">'echo</span> $<span class="type">PATH'</span>,</span><br><span class="line"><span class="symbol">'node</span> -v',</span><br><span class="line"><span class="symbol">'npm</span> -v',</span><br><span class="line"><span class="symbol">'npm</span> config get registry'</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>清空destination，此处可以由用户（此处用户指的是ci系统的用户，即业务开发）指定，如果不设置就读取默认配置，比如/dist文件夹。</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">rm</span> -rf dist</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>跑用户指定的构建脚本，gulp, grunt, webpack等各种方式，输出到/dist即可。这时候/dist里应该有<em>*/</em>.@(html|js|css|jpg|jpeg|png|gif)这些文件。</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"script"</span>: &#123;</span><br><span class="line">    <span class="string">"build"</span>: <span class="string">"gulp"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>文件名校验，文件名应该由小写字母、数字、分隔符、下划线和点组成。<code>/^[a-z0-9_\-\.\/]+$/</code></p>
+</li>
+<li><p>替换css中引用的相对路径，比如背景图，应该直接引用发到cdn上的静态文件地址。</p>
+</li>
+<li><p>压缩css。不多说了，推荐用clean-css。</p>
+</li>
+<li><p>压缩js。不多说，推荐用uglify-js。</p>
+</li>
+<li><p>压缩图片。图片推荐用imagemin，有针对jpg, jpeg, png, gif的工具。</p>
+</li>
+<li><p>给静态文件加md5。形如/dist/lib/zepto.min.js ==&gt; /dist/lib/zepto.min.md5.js</p>
+</li>
+<li><p>替换html中引用静态资源的相对路径。</p>
+</li>
+<li><p>上传ftp。</p>
+</li>
+<li><p>更新数据库版本号。</p>
+</li>
+</ul>
 </span>
       
     </div>
@@ -281,7 +306,9 @@ TypeScript 和">
       
         <div class="post-tags">
           
-            <a href="/tags/qcon/" rel="tag">#qcon</a>
+            <a href="/tags/ci/" rel="tag">#ci</a>
+          
+            <a href="/tags/nodejs/" rel="tag">#nodejs</a>
           
             <a href="/tags/前端/" rel="tag">#前端</a>
           
@@ -292,16 +319,16 @@ TypeScript 和">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/22/2016/2016-04-22-6/" rel="next" title="向未来兼容——ES2015+/TypeScript 开发 Node.js 项目">
-                <i class="fa fa-chevron-left"></i> 向未来兼容——ES2015+/TypeScript 开发 Node.js 项目
+              <a href="/2016/02/23/2016/02-23/" rel="next" title="python爬虫(一)">
+                <i class="fa fa-chevron-left"></i> python爬虫(一)
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/05/02/2016/2016-05-02/" rel="prev" title="react 使用的一些问题">
-                react 使用的一些问题 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/03/16/2016/03-16/" rel="prev" title="jsbridge">
+                jsbridge <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -371,7 +398,7 @@ TypeScript 和">
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">42</span>
+              <span class="site-state-item-count">43</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -440,7 +467,7 @@ TypeScript 和">
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#未来的前端专题简介"><span class="nav-number">1.</span> <span class="nav-text">未来的前端专题简介</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
@@ -495,9 +522,9 @@ TypeScript 和">
 
     <script type="text/javascript">
       var disqus_shortname = 'qopgithubio';
-      var disqus_identifier = '2016/04/22/2016/2016-04-22/';
-      var disqus_title = 'qcon 2016 未来的前端';
-      var disqus_url = 'http://qop.github.io/2016/04/22/2016/2016-04-22/';
+      var disqus_identifier = '2016/03/10/2016/03-10/';
+      var disqus_title = 'ci系统';
+      var disqus_url = 'http://qop.github.io/2016/03/10/2016/03-10/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
