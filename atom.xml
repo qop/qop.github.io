@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qop.github.io/"/>
-  <updated>2016-05-23T09:56:11.000Z</updated>
+  <updated>2016-05-30T08:53:55.000Z</updated>
   <id>http://qop.github.io/</id>
   
   <author>
@@ -14,6 +14,87 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何面试一名3-5年经验的前端工程师</title>
+    <link href="http://qop.github.io/2016/05/30/2016/05-30/"/>
+    <id>http://qop.github.io/2016/05/30/2016/05-30/</id>
+    <published>2016-05-29T16:00:00.000Z</published>
+    <updated>2016-05-30T08:53:55.000Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;基础得不能再基础：&quot;&gt;&lt;a href=&quot;#基础得不能再基础：&quot; class=&quot;headerlink&quot; title=&quot;基础得不能再基础：&quot;&gt;&lt;/a&gt;基础得不能再基础：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;CSS选择器及优先级&lt;/li&gt;
+&lt;li&gt;常见布局（position, float及相关）&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;说说CSS3特性（css3动画 无限旋转）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;基本类型和内置对象，常用的内置对象，类型判断（数组）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;this关键字，call &amp;amp; apply&lt;/li&gt;
+&lt;li&gt;事件冒泡，event对象&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;数组遍历&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;BOM&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;DOM-标准演变 / getElementsBy vs querySelectorAll的差别&lt;/li&gt;
+&lt;li&gt;客户端存储方案&lt;/li&gt;
+&lt;li&gt;jquery/bootstrap的设计及源码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;一些技能：&quot;&gt;&lt;a href=&quot;#一些技能：&quot; class=&quot;headerlink&quot; title=&quot;一些技能：&quot;&gt;&lt;/a&gt;一些技能：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;http请求响应过程&lt;/li&gt;
+&lt;li&gt;浏览器渲染过程-js的DocumentFragments优化，字符串拼接和array.join的效率问题等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;方案设计：&quot;&gt;&lt;a href=&quot;#方案设计：&quot; class=&quot;headerlink&quot; title=&quot;方案设计：&quot;&gt;&lt;/a&gt;方案设计：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;二级下拉菜单。html &amp;amp; css&lt;/li&gt;
+&lt;li&gt;一个ul &amp;gt; li的list，给一个字符串数组，插入到列表后面。dom操作，reflow &amp;amp; repaint及相关优化。&lt;/li&gt;
+&lt;li&gt;懒加载及进一步优化。浏览器知识，节流函数&lt;/li&gt;
+&lt;li&gt;股票交易系统点击按钮动态更新。dom xmlhttprequest json get&lt;/li&gt;
+&lt;li&gt;设计轮播组件。api 代码复用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;进一步：&quot;&gt;&lt;a href=&quot;#进一步：&quot; class=&quot;headerlink&quot; title=&quot;进一步：&quot;&gt;&lt;/a&gt;进一步：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;页面性能repaint reflow&lt;/li&gt;
+&lt;li&gt;es6&lt;/li&gt;
+&lt;li&gt;nodejs&lt;/li&gt;
+&lt;li&gt;angularjs&lt;/li&gt;
+&lt;li&gt;reactjs&lt;/li&gt;
+&lt;li&gt;http2.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;工程化：&quot;&gt;&lt;a href=&quot;#工程化：&quot; class=&quot;headerlink&quot; title=&quot;工程化：&quot;&gt;&lt;/a&gt;工程化：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;grunt gulp webpack&lt;/li&gt;
+&lt;li&gt;less sass scss&lt;/li&gt;
+&lt;li&gt;模块化工具&lt;/li&gt;
+&lt;li&gt;网站性能&lt;/li&gt;
+&lt;li&gt;CDN&lt;/li&gt;
+&lt;li&gt;SEO&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;开放性问题：&quot;&gt;&lt;a href=&quot;#开放性问题：&quot; class=&quot;headerlink&quot; title=&quot;开放性问题：&quot;&gt;&lt;/a&gt;开放性问题：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;今年最想掌握的前端技术&lt;/li&gt;
+&lt;li&gt;如何获取最新的领域知识&lt;/li&gt;
+&lt;li&gt;开发时碰到印象深刻的问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;移动端：&quot;&gt;&lt;a href=&quot;#移动端：&quot; class=&quot;headerlink&quot; title=&quot;移动端：&quot;&gt;&lt;/a&gt;移动端：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;meta标签&lt;/li&gt;
+&lt;li&gt;input，click/touch，mediaquery，1px border等等&lt;/li&gt;
+&lt;li&gt;性能优化 - &lt;a href=&quot;http://isux.tencent.com/h5-performance.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://isux.tencent.com/h5-performance.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;可参考：&quot;&gt;&lt;a href=&quot;#可参考：&quot; class=&quot;headerlink&quot; title=&quot;可参考：&quot;&gt;&lt;/a&gt;可参考：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://mdluo.github.io/blog/about-front-end-interview/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://mdluo.github.io/blog/about-front-end-interview/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;基础得不能再基础：&quot;&gt;&lt;a href=&quot;#基础得不能再基础：&quot; class=&quot;headerlink&quot; title=&quot;基础得不能再基础：&quot;&gt;&lt;/a&gt;基础得不能再基础：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;CSS选择器及优先级&lt;/li&gt;
+&lt;li&gt;常见布局（position, f
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="面试" scheme="http://qop.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>如何面试一名前端工程师</title>
@@ -104,13 +185,14 @@
   </entry>
   
   <entry>
-    <title>互动娱乐时代下的 Web 音视频性能优化</title>
-    <link href="http://qop.github.io/2016/04/22/2016/04-22-7/"/>
-    <id>http://qop.github.io/2016/04/22/2016/04-22-7/</id>
+    <title>qcon 2016 未来的前端</title>
+    <link href="http://qop.github.io/2016/04/22/2016/04-22/"/>
+    <id>http://qop.github.io/2016/04/22/2016/04-22/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-05-05T08:34:30.000Z</updated>
+    <updated>2016-05-05T08:30:04.000Z</updated>
     
-    <content type="html">&lt;p&gt;关键技术：&lt;br&gt;    自己封装的音视频sdk，私有协议与flash互通。&lt;br&gt;遇到的挑战：（如何优化？）&lt;br&gt;    首屏时间&lt;br&gt;    实时性&lt;br&gt;    流畅性&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;未来的前端专题简介&quot;&gt;&lt;a href=&quot;#未来的前端专题简介&quot; class=&quot;headerlink&quot; title=&quot;未来的前端专题简介&quot;&gt;&lt;/a&gt;&lt;a href=&quot;!http://2016.qconbeijing.com/track/2782&quot;&gt;未来的前端专题简介&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;2016 QCon beijing 前端专场，除了隔壁的移动开发挑战专场分享了阿里的Weex和携程的ReactMix几乎所有的前端主题都在这里了。&lt;br&gt;本届 QCon 的前端专场主要是在讨论前端技术未来的发展趋势，主题主要有两方面：一是讨论新的规范和标准（ECMAScript 6, TypeScript, React等），二是分享一些成熟的前端解决方案。&lt;/p&gt;
+&lt;hr&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
@@ -118,20 +200,72 @@
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-6/&quot;&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;关键技术：&lt;br&gt;    自己封装的音视频sdk，私有协议与flash互通。&lt;br&gt;遇到的挑战：（如何优化？）&lt;br&gt;    首屏时间&lt;br&gt;    实时性&lt;br&gt;    流畅性&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016
+      &lt;h2 id=&quot;未来的前端专题简介&quot;&gt;&lt;a href=&quot;#未来的前端专题简介&quot; class=&quot;headerlink&quot; title=&quot;未来的前端专题简介&quot;&gt;&lt;/a&gt;&lt;a href=&quot;!http://2016.qconbeijing.com/track/2782&quot;&gt;未来的前端专题简介
     
     </summary>
     
     
       <category term="qcon" scheme="http://qop.github.io/tags/qcon/"/>
+    
+      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>向未来兼容——ES2015+/TypeScript 开发 Node.js 项目</title>
+    <link href="http://qop.github.io/2016/04/22/2016/04-22-6/"/>
+    <id>http://qop.github.io/2016/04/22/2016/04-22-6/</id>
+    <published>2016-04-21T16:00:00.000Z</published>
+    <updated>2016-05-05T08:34:18.000Z</updated>
+    
+    <content type="html">&lt;p&gt;ES2015特性，stage 3 &amp;amp; 4，未来特性，async/await, decorators&lt;br&gt;没有runtime支持如何使用这些特性？babel&lt;br&gt;编译引入的问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;编译慢的问题——升级到npm3&lt;/li&gt;
+&lt;li&gt;性能问题&lt;/li&gt;
+&lt;li&gt;使用es2015-loose，性能更高(部分6x)；&lt;/li&gt;
+&lt;li&gt;使用bluebird替代promise(3x)；&lt;a href=&quot;https://github.com/petkaantonov/bluebird/wiki/Optimization-killers&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/petkaantonov/bluebird/wiki/Optimization-killers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;如何实时编译——babel –watch&lt;/li&gt;
+&lt;li&gt;报错信息定位到源代码&lt;br&gt;babel –retain-lines（定位不准）&lt;br&gt;babel –sourceMap&lt;br&gt;借助 source-map-support 模块&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;断点调试&lt;br&gt;    借助 SourceMap，node-inspector、WebStorm、VS Code 等都支持借助 SourceMap 来断点调试源代码&lt;br&gt;    编译出错后如何快速提示——命令行编译错误信息显示在控制台→调用接口编译将错误信息打印到页面。&lt;br&gt;typescript&lt;br&gt;    先tsc，在babel（为啥？不记得了）&lt;br&gt;    两次编译生成SourceMap导致报错信息定位不准，solution&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-3/&quot;&gt;青瓷引擎——打造 HTML5 游戏引擎开发工具之路&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;ES2015特性，stage 3 &amp;amp; 4，未来特性，async/await, decorators&lt;br&gt;没有runtime支持如何使用这些特性？babel&lt;br&gt;编译引入的问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;编译慢的问题——升级到npm3&lt;/li&gt;
+&lt;li&gt;性能问题
+    
+    </summary>
+    
+    
+      <category term="es2015" scheme="http://qop.github.io/tags/es2015/"/>
+    
+      <category term="es6" scheme="http://qop.github.io/tags/es6/"/>
+    
+      <category term="node" scheme="http://qop.github.io/tags/node/"/>
+    
+      <category term="qcon" scheme="http://qop.github.io/tags/qcon/"/>
+    
+      <category term="ts" scheme="http://qop.github.io/tags/ts/"/>
+    
+      <category term="typescript" scheme="http://qop.github.io/tags/typescript/"/>
     
       <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
@@ -393,14 +527,13 @@
   </entry>
   
   <entry>
-    <title>qcon 2016 未来的前端</title>
-    <link href="http://qop.github.io/2016/04/22/2016/04-22/"/>
-    <id>http://qop.github.io/2016/04/22/2016/04-22/</id>
+    <title>互动娱乐时代下的 Web 音视频性能优化</title>
+    <link href="http://qop.github.io/2016/04/22/2016/04-22-7/"/>
+    <id>http://qop.github.io/2016/04/22/2016/04-22-7/</id>
     <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-05-05T08:30:04.000Z</updated>
+    <updated>2016-05-05T08:34:30.000Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;未来的前端专题简介&quot;&gt;&lt;a href=&quot;#未来的前端专题简介&quot; class=&quot;headerlink&quot; title=&quot;未来的前端专题简介&quot;&gt;&lt;/a&gt;&lt;a href=&quot;!http://2016.qconbeijing.com/track/2782&quot;&gt;未来的前端专题简介&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;2016 QCon beijing 前端专场，除了隔壁的移动开发挑战专场分享了阿里的Weex和携程的ReactMix几乎所有的前端主题都在这里了。&lt;br&gt;本届 QCon 的前端专场主要是在讨论前端技术未来的发展趋势，主题主要有两方面：一是讨论新的规范和标准（ECMAScript 6, TypeScript, React等），二是分享一些成熟的前端解决方案。&lt;/p&gt;
-&lt;hr&gt;
+    <content type="html">&lt;p&gt;关键技术：&lt;br&gt;    自己封装的音视频sdk，私有协议与flash互通。&lt;br&gt;遇到的挑战：（如何优化？）&lt;br&gt;    首屏时间&lt;br&gt;    实时性&lt;br&gt;    流畅性&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
@@ -408,72 +541,20 @@
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-6/&quot;&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/li&gt;
 &lt;/ol&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;未来的前端专题简介&quot;&gt;&lt;a href=&quot;#未来的前端专题简介&quot; class=&quot;headerlink&quot; title=&quot;未来的前端专题简介&quot;&gt;&lt;/a&gt;&lt;a href=&quot;!http://2016.qconbeijing.com/track/2782&quot;&gt;未来的前端专题简介
+      &lt;p&gt;关键技术：&lt;br&gt;    自己封装的音视频sdk，私有协议与flash互通。&lt;br&gt;遇到的挑战：（如何优化？）&lt;br&gt;    首屏时间&lt;br&gt;    实时性&lt;br&gt;    流畅性&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016
     
     </summary>
     
     
       <category term="qcon" scheme="http://qop.github.io/tags/qcon/"/>
-    
-      <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>向未来兼容——ES2015+/TypeScript 开发 Node.js 项目</title>
-    <link href="http://qop.github.io/2016/04/22/2016/04-22-6/"/>
-    <id>http://qop.github.io/2016/04/22/2016/04-22-6/</id>
-    <published>2016-04-21T16:00:00.000Z</published>
-    <updated>2016-05-05T08:34:18.000Z</updated>
-    
-    <content type="html">&lt;p&gt;ES2015特性，stage 3 &amp;amp; 4，未来特性，async/await, decorators&lt;br&gt;没有runtime支持如何使用这些特性？babel&lt;br&gt;编译引入的问题：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;编译慢的问题——升级到npm3&lt;/li&gt;
-&lt;li&gt;性能问题&lt;/li&gt;
-&lt;li&gt;使用es2015-loose，性能更高(部分6x)；&lt;/li&gt;
-&lt;li&gt;使用bluebird替代promise(3x)；&lt;a href=&quot;https://github.com/petkaantonov/bluebird/wiki/Optimization-killers&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/petkaantonov/bluebird/wiki/Optimization-killers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;如何实时编译——babel –watch&lt;/li&gt;
-&lt;li&gt;报错信息定位到源代码&lt;br&gt;babel –retain-lines（定位不准）&lt;br&gt;babel –sourceMap&lt;br&gt;借助 source-map-support 模块&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;断点调试&lt;br&gt;    借助 SourceMap，node-inspector、WebStorm、VS Code 等都支持借助 SourceMap 来断点调试源代码&lt;br&gt;    编译出错后如何快速提示——命令行编译错误信息显示在控制台→调用接口编译将错误信息打印到页面。&lt;br&gt;typescript&lt;br&gt;    先tsc，在babel（为啥？不记得了）&lt;br&gt;    两次编译生成SourceMap导致报错信息定位不准，solution&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-1/&quot;&gt;TypeScript 和 ECMAScript 6 实践&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-2/&quot;&gt;React 和 Ant Design 在蚂蚁金服的实践&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-3/&quot;&gt;青瓷引擎——打造 HTML5 游戏引擎开发工具之路&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-4/&quot;&gt;如何看待 left-pad 事件&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-5/&quot;&gt;前后端联调方案探索与应用&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;向未来兼容——ES2015+/TypeScript 开发 Node.js 项目&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://qop.github.io/2016/04/22/2016/2016-04-22-7/&quot;&gt;互动娱乐时代下的 Web 音视频性能优化&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;ES2015特性，stage 3 &amp;amp; 4，未来特性，async/await, decorators&lt;br&gt;没有runtime支持如何使用这些特性？babel&lt;br&gt;编译引入的问题：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;编译慢的问题——升级到npm3&lt;/li&gt;
-&lt;li&gt;性能问题
-    
-    </summary>
-    
-    
-      <category term="es2015" scheme="http://qop.github.io/tags/es2015/"/>
-    
-      <category term="es6" scheme="http://qop.github.io/tags/es6/"/>
-    
-      <category term="node" scheme="http://qop.github.io/tags/node/"/>
-    
-      <category term="qcon" scheme="http://qop.github.io/tags/qcon/"/>
-    
-      <category term="ts" scheme="http://qop.github.io/tags/ts/"/>
-    
-      <category term="typescript" scheme="http://qop.github.io/tags/typescript/"/>
     
       <category term="前端" scheme="http://qop.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
@@ -745,38 +826,6 @@
       <category term="互联网" scheme="http://qop.github.io/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
     
       <category term="碎碎念" scheme="http://qop.github.io/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>也说视频网站</title>
-    <link href="http://qop.github.io/2014/09/21/2014/09-21/"/>
-    <id>http://qop.github.io/2014/09/21/2014/09-21/</id>
-    <published>2014-09-20T16:00:00.000Z</published>
-    <updated>2016-02-23T08:13:08.000Z</updated>
-    
-    <content type="html">&lt;p&gt;　　也说互联网最初的赚钱模式——广告。&lt;/p&gt;
-&lt;p&gt;　　随着习惯的变化，越来越多人看视频的场景由pc转到了移动端。对于我也是如此，所以原来在pc端很好用的一些禁广告插件现在用不了了。眼看着优酷等主流视频网站把广告时长由15秒，30秒调整到丧心病狂的一分钟。——于是我成为了优酷会员。。。&lt;br&gt;　　体验了几天之后发现，会员除了不用看广告，其他的服务都极为鸡肋，而广告本身对用户却毫无价值。其实广告可以做的更加智能。后台可以进行数据挖掘，找到用户关注的内容，定向投放。前台可以像豆瓣电台一样做红心和垃圾箱（youtube的跳过），用户可以不断调教自己的视频广告，这样体验上来了，效果也上来了。理想的场景是100个人，20个人看A广告，20个人看B广告，30个人看C广告，也许有30个人啥都不看。目前的情况是100个人，每人分别有30%、30%、40%的概率看到A广告、B广告、C广告。&lt;br&gt;　　不过话说回来，广告投放系统极为复杂，效果这个东西短期内也不好量化，对急功近利的大环境来说，要做到很难。&lt;/p&gt;
-&lt;p&gt;　　当然了，也有这方面做的很好的。&lt;br&gt;　　举例来说，点评的广告位是很值钱的，CPM收费可以达到一般网站的十倍甚至100倍，因为效果好。为何效果好呢，原因有二：点评用户的质量高（客单价高，以及用户忠诚度比较高）；点评用户的诉求很明确，和来投放广告的餐饮娱乐业极为吻合，CPM可以达到CPA的效果。再看看youtube，因为背后站着谷歌，所以猜想广告的订制性一定是极好的（没怎么用过，依据谷歌本身的广告投放技术猜测）。而且youtube还自信到开放用户关闭广告的权限。&lt;/p&gt;
-&lt;p&gt;　　此外，优酷推出的会员加付费视频的模式可类比于app store上的付费下载加内购，这种模式是非常好的。但是优酷的推广做的比较一般，目前的两个活动分别是：开通支付宝自动续费，三个月返50元红包，相当于3个月10块钱，当然要记得取消自动续费。另一个活动是一次性开通三个月会员返50元话费。&lt;br&gt;　　感觉到活动最大的问题是，没有用户会想到开着支付宝看视频——即用户属性不一致。优酷最天然的朋友应该是社交属性强大的腾讯，无奈腾讯有自己的视频业务，所以只好和支付宝合作。&lt;br&gt;　　这方面另一个反例就是点评了，之前鼓吹得那么厉害的价值几个亿的微信入口，一个月只给点评带来几十万成交额。可惜阿里本身是要做O2O的，没办法和支付宝合作，不然想象一下在支付宝推点评的业务是多么美如画吖。&lt;br&gt;　　有一个正面的例子是迅雷增值服务，三四年前推出的云播、离线下载及高速通道加速，在大量提供『试用会员』的对比下将增值服务开展得如火如荼。ps：那段时间不用会员下不动确实是比较猥琐却又难以发现的黑手。&lt;/p&gt;
-&lt;p&gt;　　说了那么多做的不好的，不得不提视频网站的无奈之处：法律对视频版权的约束和习惯于盗版的网民之间不可调和的矛盾。现在最赚钱的内容应该是各种电视剧了，所以内容必须要新且全，但是目前付费用户数量不足以cover这块支出。so…&lt;br&gt;　　这方面豆瓣阅读已经形成了非常好的生态圈，用极大的利益抓住优质的（独家）内容提供者，用多平台良好的用户体验抓住用户，再加上豆瓣用户质量本身比较高，所以豆瓣阅读仅凭自然增长就已经欣欣向荣了。&lt;br&gt;　　我之前说过，互联网最根本最彻底的赚钱模式是革传统行业的命。视频网站正是如此，越来越多的人抛弃电视转向在线视频，所以一定是有前（钱）途的。&lt;br&gt;　　在网络带宽这个方面，时机是成熟了，但是用户习惯还有很长的路要走。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　也说互联网最初的赚钱模式——广告。&lt;/p&gt;
-&lt;p&gt;　　随着习惯的变化，越来越多人看视频的场景由pc转到了移动端。对于我也是如此，所以原来在pc端很好用的一些禁广告插件现在用不了了。眼看着优酷等主流视频网站把广告时长由15秒，30秒调整到丧心病狂的一分钟。——于是我成为了
-    
-    </summary>
-    
-    
-      <category term="互联网" scheme="http://qop.github.io/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
-    
-      <category term="优酷" scheme="http://qop.github.io/tags/%E4%BC%98%E9%85%B7/"/>
-    
-      <category term="广告" scheme="http://qop.github.io/tags/%E5%B9%BF%E5%91%8A/"/>
-    
-      <category term="流量" scheme="http://qop.github.io/tags/%E6%B5%81%E9%87%8F/"/>
     
   </entry>
   
